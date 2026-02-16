@@ -84,9 +84,18 @@ export default function Hero() {
                 button.variant === 'outline' && 'inset-shadow-indigo-500',
                 button.variant === 'default' && 'inset-shadow-indigo-500',
               )}
+              asChild
             >
-              {IconComponent && <IconComponent />}
-              <Link href={button.href}>{button.text}</Link>
+              <Link
+                href={button.href}
+                target={button.target}
+                rel={
+                  button.target === '_blank' ? 'noopener noreferrer' : undefined
+                }
+              >
+                {IconComponent && <IconComponent />}
+                {button.text}
+              </Link>
             </Button>
           );
         })}
