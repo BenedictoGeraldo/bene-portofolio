@@ -1,4 +1,3 @@
-// src/components/landing/Technology.tsx
 'use client';
 
 import { technologyConfig } from '@/config/Technology';
@@ -7,10 +6,6 @@ import React from 'react';
 import Container from '../common/Container';
 import SectionHeading from '../common/SectionHeading';
 import { Tooltip, TooltipContent, TooltipTrigger } from '../ui/tooltip';
-
-// src/components/landing/Technology.tsx
-
-// src/components/landing/Technology.tsx
 
 export default function Technology() {
   return (
