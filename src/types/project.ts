@@ -1,15 +1,23 @@
+export type ProjectStatus = 'completed' | 'ongoing';
+export type ProjectType = 'featured' | 'other';
+
+export interface ScreenshotItem {
+  src: string;
+  caption: string;
+}
+
 export interface Project {
   title: string;
   description: string;
   image: string;
-  video?: string;
-  link: string;
+  link?: string | null;
   technologies: { name: string; icon: React.ReactNode }[];
-  github?: string;
-  live: string;
-  details: boolean;
-  projectDetailsPageSlug: string;
-  isWorking: boolean;
+  github?: string | null;
+  screenshots?: ScreenshotItem[];
+  status: ProjectStatus;
+  type: ProjectType;
+  details?: boolean;
+  projectDetailsPageSlug?: string;
 }
 
 export interface ProjectCaseStudyFrontmatter {
