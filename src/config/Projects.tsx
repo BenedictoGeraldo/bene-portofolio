@@ -1,269 +1,202 @@
-import Appwrite from '@/components/technologies/Appwrite';
-import Bun from '@/components/technologies/Bun';
-import ExpressJs from '@/components/technologies/ExpressJs';
-import Github from '@/components/technologies/Github';
-import MDXIcon from '@/components/technologies/MDXIcon';
-import MongoDB from '@/components/technologies/MongoDB';
-import Motion from '@/components/technologies/Motion';
-import Netlify from '@/components/technologies/Netlify';
+import Axios from '@/components/technologies/Axios';
+import BootStrap from '@/components/technologies/BootStrap';
+import CSS from '@/components/technologies/CSS';
+import Docker from '@/components/technologies/Docker';
+import Express from '@/components/technologies/Express';
+import Filament from '@/components/technologies/Filament';
+import Html from '@/components/technologies/Html';
+import InfinityFree from '@/components/technologies/InfinityFree';
+import JavaScript from '@/components/technologies/JavaScript';
+import Laravel from '@/components/technologies/Laravel';
+import MySQL from '@/components/technologies/MySQL';
+import NestJs from '@/components/technologies/NestJs';
 import NextJs from '@/components/technologies/NextJs';
-import NodeJs from '@/components/technologies/NodeJs';
 import PostgreSQL from '@/components/technologies/PostgreSQL';
-import Prisma from '@/components/technologies/Prisma';
-import ReactIcon from '@/components/technologies/ReactIcon';
-import Sanity from '@/components/technologies/Sanity';
-import Shadcn from '@/components/technologies/Shadcn';
-import SocketIo from '@/components/technologies/SocketIo';
+import Postman from '@/components/technologies/Postman';
 import TailwindCss from '@/components/technologies/TailwindCss';
-import ThreeJs from '@/components/technologies/ThreeJs';
+import Twilio from '@/components/technologies/Twilio';
 import TypeScript from '@/components/technologies/TypeScript';
-import Vercel from '@/components/technologies/Vercel';
+import WordPress from '@/components/technologies/WordPress';
 import { Project } from '@/types/project';
 
 export const projects: Project[] = [
   {
-    title: 'NotesBuddy',
+    title: 'Pelayanan Kode NCAGE',
     description:
-      'A comprehensive study platform with notes, flashcards, quizzes, AI chatbot, and interactive learning tools',
-    image: '/project/notesbuddy.png',
-    video: 'https://ik.imagekit.io/hokb3mrdr/notesbuddy.mp4?tr=orig',
-    link: 'https://notesbuddy.in',
-    technologies: [
-      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
-      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
-      { name: 'React', icon: <ReactIcon key="react" /> },
-      { name: 'Vercel', icon: <Vercel key="vercel" /> },
-      { name: 'MongoDB', icon: <MongoDB key="mongodb" /> },
-      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
-      { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
-      { name: 'MDX', icon: <MDXIcon key="mdx" /> },
+      'Government-grade system to manage registration and updating of NCAGE codes with secure workflows',
+    image: '/project/thumbnail-ncage.png',
+    link: null,
+    screenshots: [
+      { src: '/project/ncage/login.png', caption: 'Login Page' },
+      {
+        src: '/project/ncage/ncage-registration-form.png',
+        caption: 'NCAGE Registration Form',
+      },
+      {
+        src: '/project/ncage/monitoring-status.png',
+        caption: 'Registration NCAGE Status Monitoring',
+      },
+      {
+        src: '/project/ncage/admin-dashboard.png',
+        caption: 'Admin Dashboard',
+      },
     ],
-    github: 'https://github.com/ramxcodes/notesbuddy',
-    live: 'https://notesbuddy.in',
-    details: true,
-    projectDetailsPageSlug: '/projects/notesbuddy',
-    isWorking: true,
+    technologies: [
+      { name: 'Laravel', icon: <Laravel key="laravel" /> },
+      { name: 'MySQL', icon: <MySQL key="mysql" /> },
+      { name: 'Bootstrap', icon: <BootStrap key="bootstrap" /> },
+      { name: 'Filament', icon: <Filament key="filament" /> },
+      { name: 'Twilio', icon: <Twilio key="twilio" /> },
+    ],
+    github: 'https://github.com/BenedictoGeraldo/Project_NCAGE.git',
+    status: 'completed',
+    type: 'featured',
+    details: false,
+    projectDetailsPageSlug: '/projects/ncage',
   },
   {
-    title: 'Appwrite MCP Server',
+    title: 'STARK',
     description:
-      'Model Context Protocol server for seamless Appwrite database operations with 7 powerful tools and 99.9% success rate',
-    image: '/project/appwrite.png',
-    video: 'https://ik.imagekit.io/hokb3mrdr/appwrite.mp4',
-    link: 'https://mcp.ramx.in/',
-    technologies: [
-      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
-      { name: 'Bun', icon: <Bun key="bun" /> },
-      { name: 'Vercel', icon: <Vercel key="vercel" /> },
-      { name: 'Appwrite', icon: <Appwrite key="appwrite" /> },
+      'A fullstack project management platform for tracking tasks, deadlines, and team collaboration',
+    image: '/project/stark-thumbnail.png',
+    link: null,
+    screenshots: [
+      { src: '/project/stark/registration.png', caption: 'Registration Page' },
+      {
+        src: '/project/stark/dashboard-user.png',
+        caption: 'User Dashboard',
+      },
+      { src: '/project/stark/dashboard-admin.png', caption: 'Admin Dashboard' },
+      {
+        src: '/project/stark/add-project.png',
+        caption: 'Add New Project Form',
+      },
     ],
-    github: 'https://github.com/ramxcodes/mcp-server',
-    live: 'https://mcp.ramx.in/',
-    details: true,
-    projectDetailsPageSlug: '/projects/appwrite-mcp-server',
-    isWorking: true,
+    technologies: [
+      { name: 'JavaScript', icon: <JavaScript key="javascript" /> },
+      { name: 'NextJs', icon: <NextJs key="nextjs" /> },
+      { name: 'TailwindCss', icon: <TailwindCss key="tailwind" /> },
+      { name: 'Axios', icon: <Axios key="axios" /> },
+      { name: 'Express', icon: <Express key="express" /> },
+      { name: 'MySQL', icon: <MySQL key="mysql" /> },
+      { name: 'Postman', icon: <Postman key="postman" /> },
+      { name: 'Docker', icon: <Docker key="docker" /> },
+    ],
+    github: 'https://github.com/BenedictoGeraldo/Freelance-Management.git',
+    status: 'completed',
+    type: 'featured',
+    details: false,
+    projectDetailsPageSlug: '/projects/stark',
   },
   {
-    title: 'Syncify',
+    title: 'Mari Futsal',
     description:
-      'Real-time music streaming platform with synchronized playback, live chat, and social listening features',
-    image: '/project/syncify.png',
-    video: 'https://ik.imagekit.io/hokb3mrdr/syncify.mp4',
-    link: 'https://syncify.rocks',
+      'A fully customized WordPress website with optimized performance, custom features, and production deployment',
+    image: '/project/mari-futsal-thumbnail.png',
+    link: 'https://mari-futsal-halim.kesug.com/', // LIVE - ganti dengan URL asli
     technologies: [
-      { name: 'React', icon: <ReactIcon key="react" /> },
-      { name: 'Node.js', icon: <NodeJs key="nodejs" /> },
-      { name: 'MongoDB', icon: <MongoDB key="mongodb" /> },
-      { name: 'Vercel', icon: <Vercel key="vercel" /> },
-      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
-      { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
-      { name: 'Socket.io', icon: <SocketIo key="socketio" /> },
+      { name: 'WordPress', icon: <WordPress key="wordpress" /> },
+      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwind" /> },
+      { name: 'MySQL', icon: <MySQL key="mysql" /> },
+      { name: 'InfinityFree', icon: <InfinityFree key="infinityfree" /> },
     ],
-    github: 'https://github.com/ramxcodes/syncify',
-    live: 'https://syncify.rocks',
-    details: true,
-    projectDetailsPageSlug: '/projects/syncify',
-    isWorking: true,
+    github: 'https://github.com/BenedictoGeraldo/wp-mari-futsal.git',
+    status: 'completed',
+    type: 'featured',
+    details: false,
+    projectDetailsPageSlug: '/projects/mari-futsal',
   },
   {
-    title: 'Pasandida Aurat',
+    title: 'MyHR',
     description:
-      'Innovative dating platform featuring anonymous questions and authentic connections - currently in development',
-    image: '/project/pasandida.png',
-    video: 'https://ik.imagekit.io/hokb3mrdr/pasandida.mp4',
-    link: 'https://www.pasandidaurat.com/',
+      'An enterprise-scale information system focusing on modular architecture, scalability, and clean design',
+    image: '/project/myhr-thumbnail.png',
+    link: null, // Ongoing - belum live
     technologies: [
-      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
       { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
-      { name: 'Prisma', icon: <Prisma key="prisma" /> },
+      { name: 'NextJs', icon: <NextJs key="nextjs" /> },
+      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwind" /> },
+      { name: 'Axios', icon: <Axios key="axios" /> },
+      { name: 'NestJs', icon: <NestJs key="nestjs" /> },
       { name: 'PostgreSQL', icon: <PostgreSQL key="postgresql" /> },
-      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
-      { name: 'Socket.io', icon: <SocketIo key="socketio" /> },
+      { name: 'Postman', icon: <Postman key="postman" /> },
+      { name: 'Docker', icon: <Docker key="docker" /> },
     ],
-    live: 'https://www.pasandidaurat.com/',
-    details: true,
-    projectDetailsPageSlug: '/projects/pasandida-aurat',
-    isWorking: false, // Currently in development
+    github: null,
+    status: 'ongoing',
+    type: 'featured',
+    details: false,
+    projectDetailsPageSlug: '/projects/myhr',
   },
+
+  // ========== OTHER SELECTED PROJECTS ==========
   {
-    title: 'The Quest',
-    description:
-      'Personal challenge tracker for completing 500 DSA problems, earning ₹300,000, and improving fitness within 6 months',
-    image: '/project/quest.png',
-    video: 'https://ik.imagekit.io/hokb3mrdr/quest.mp4',
-    link: 'https://quest.ramx.in/',
+    title: 'Portfolio Website',
+    description: 'Modern personal portfolio with smooth UI',
+    image: '/project/portfolio-thumbnail.png',
+    link: 'https://yourportfolio.com', // LIVE - ganti dengan domain asli
     technologies: [
+      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
       { name: 'Next.js', icon: <NextJs key="nextjs" /> },
-      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
-      { name: 'Vercel', icon: <Vercel key="vercel" /> },
-      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
-      { name: 'MDX', icon: <MDXIcon key="mdx" /> },
-      { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
+      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwind" /> },
     ],
-    github: 'https://github.com/ramxcodes/the-quest',
-    live: 'https://quest.ramx.in/',
-    details: true,
-    projectDetailsPageSlug: '/projects/the-quest',
-    isWorking: true,
+    github: 'https://github.com/BenedictoGeraldo/bene-portofolio.git',
+    status: 'completed',
+    type: 'other',
   },
   {
-    title: 'FestX',
-    description:
-      "Comprehensive event management platform for college festivals and hackathons built for NMIMS'24 Hackathon",
-    image: '/project/festx.png',
-    video: 'https://ik.imagekit.io/hokb3mrdr/fest-x.mp4',
-    link: 'https://fest-x.ramx.in/',
-    technologies: [
-      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
-      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
-      { name: 'MongoDB', icon: <MongoDB key="mongodb" /> },
-      { name: 'Vercel', icon: <Vercel key="vercel" /> },
-      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
-      { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
+    title: 'Asset Management System',
+    description: 'Enterprise asset management system',
+    image: '/project/pelita-thumbnail.png',
+    link: null, // Ongoing
+    screenshots: [
+      { src: '/project/pelita/login.png', caption: 'Login' },
+      { src: '/project/pelita/category-list.png', caption: 'List Categories' },
+      {
+        src: '/project/pelita/user-management.png',
+        caption: 'User Management',
+      },
     ],
-    github: 'https://github.com/ramxcodes/fest-x',
-    live: 'https://fest-x.ramx.in/',
-    details: true,
-    projectDetailsPageSlug: '/projects/fest-x',
-    isWorking: true,
+    technologies: [
+      { name: 'Laravel', icon: <Laravel key="laravel" /> },
+      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwind" /> },
+      { name: 'MySQL', icon: <MySQL key="mysql" /> },
+    ],
+    github: 'https://github.com/BenedictoGeraldo/manajemen-asset-kalvari.git',
+    status: 'ongoing',
+    type: 'other',
   },
   {
-    title: "I'm a chill guy",
-    description:
-      'AI-powered GitHub profile roaster with intelligent analysis, witty commentary, and social sharing features',
-    image: '/project/chillguy.png',
-    link: 'https://chillguy.ramx.in',
-    technologies: [
-      { name: 'React', icon: <ReactIcon key="react" /> },
-      { name: 'Express.js', icon: <ExpressJs key="expressjs" /> },
-      { name: 'Vercel', icon: <Vercel key="vercel" /> },
-      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
-      { name: 'Netlify', icon: <Netlify key="netlify" /> },
-      { name: 'GitHub', icon: <Github key="github" /> },
+    title: 'House Ilmu Indonesia Company Profile',
+    description: 'Responsive company profile website',
+    image: '/project/house-ilmu-thumbnail.png',
+    link: null,
+    screenshots: [
+      {
+        src: '/project/house-ilmu-indonesia/opportunities-detail.png',
+        caption: 'Opportunities Section',
+      },
+      {
+        src: '/project/house-ilmu-indonesia/career.png',
+        caption: 'Career Section',
+      },
+      {
+        src: '/project/house-ilmu-indonesia/programme.png',
+        caption: 'Programme Section',
+      },
     ],
-    github: 'https://github.com/ramxcodes/chill-guy',
-    live: 'https://chillguy.ramx.in',
-    details: true,
-    projectDetailsPageSlug: '/projects/chill-guy',
-    isWorking: true,
-  },
-  {
-    title: "Ram's Space",
-    description:
-      'Personal poetry and blog platform featuring emotional stories, poems, and creative writing with dark/light theme support',
-    image: '/project/ramspace.png',
-    video: 'https://ik.imagekit.io/hokb3mrdr/ramspace.mp4',
-    link: 'https://blog.ramx.in/',
     technologies: [
-      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
-      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
-      { name: 'React', icon: <ReactIcon key="react" /> },
-      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
-      { name: 'MDX', icon: <MDXIcon key="mdx" /> },
+      { name: 'HTML', icon: <Html key="html" /> },
+      { name: 'CSS', icon: <CSS key="css" /> },
+      { name: 'JavaScript', icon: <JavaScript key="javascript" /> },
+      { name: 'Bootstrap', icon: <BootStrap key="bootstrap" /> },
     ],
-    live: 'https://blog.ramx.in/',
-    details: true,
-    projectDetailsPageSlug: '/projects/poems-blog',
-    isWorking: true,
-  },
-  {
-    title: 'Intent JS',
-    description:
-      'Modern JavaScript library website with advanced animations, interactive playground, and comprehensive documentation',
-    image: '/project/intent.png',
-    video: 'https://ik.imagekit.io/hokb3mrdr/intent.mp4',
-    link: 'https://intent-js.ramx.in',
-    technologies: [
-      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
-      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
-      { name: 'React', icon: <ReactIcon key="react" /> },
-      { name: 'Motion', icon: <Motion key="motion" /> },
-      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
-      { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
-    ],
-    github: 'https://github.com/ramxcodes/intent-js',
-    live: 'https://intent-js.ramx.in',
-    details: true,
-    projectDetailsPageSlug: '/projects/intent-js',
-    isWorking: true,
-  },
-  {
-    title: 'Moonstone 2K25',
-    description:
-      "Official website for Medicaps University's premier annual college festival with event management and registration",
-    image: '/project/moonstone.png',
-    video: 'https://ik.imagekit.io/hokb3mrdr/moonstone.mp4',
-    link: 'https://moonstone.ramx.in/',
-    technologies: [
-      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
-      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
-      { name: 'React', icon: <ReactIcon key="react" /> },
-      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
-      { name: 'Motion', icon: <Motion key="motion" /> },
-      { name: 'Three.js', icon: <ThreeJs key="threejs" /> },
-      { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
-    ],
-    github: 'https://github.com/ramxcodes/moonstone-fest',
-    live: 'https://moonstone.ramx.in/',
-    details: true,
-    projectDetailsPageSlug: '/projects/moonstone-fest',
-    isWorking: true,
-  },
-  {
-    title: 'Valorant Remastered',
-    description:
-      'Gaming website with immersive 3D animations, agent showcases, and performance-optimized Valorant experience',
-    image: '/project/valorant.png',
-    video: 'https://ik.imagekit.io/hokb3mrdr/valorant.mp4',
-    link: 'https://valorant.ramx.in',
-    technologies: [
-      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
-      { name: 'React', icon: <ReactIcon key="react" /> },
-    ],
-    github: 'https://github.com/ramxcodes/valorant-remastered',
-    live: 'https://valorant.ramx.in',
-    details: true,
-    projectDetailsPageSlug: '/projects/valorant-remastered',
-    isWorking: true,
-  },
-  {
-    title: 'That Startup',
-    description:
-      'Startup listing and pitching platform where entrepreneurs can submit ideas, vote on concepts, and connect with founders',
-    image: '/project/that-startup.png',
-    video: 'https://ik.imagekit.io/hokb3mrdr/that-startup.mp4',
-    link: 'https://that-startup.ramx.in/',
-    technologies: [
-      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
-      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
-      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
-      { name: 'Sanity', icon: <Sanity key="sanity" /> },
-      { name: 'Vercel', icon: <Vercel key="vercel" /> },
-    ],
-    github: 'https://github.com/ramxcodes/that-startup',
-    live: 'https://that-startup.ramx.in/',
-    details: true,
-    projectDetailsPageSlug: '/projects/that-startup',
-    isWorking: true,
+    github: 'https://github.com/tech-house-ilmu/web-hi-main-hosting-repo.git',
+    status: 'completed',
+    type: 'other',
   },
 ];
+
+// Utility exports untuk filtering
+export const featuredProjects = projects.filter((p) => p.type === 'featured');
+export const otherProjects = projects.filter((p) => p.type === 'other');
