@@ -1,6 +1,7 @@
 import Container from '@/components/common/Container';
 import About from '@/components/landing/About';
 import CTA from '@/components/landing/CTA';
+import Certifications from '@/components/landing/Certifications';
 import Education from '@/components/landing/Education';
 import Experience from '@/components/landing/Experience';
 import Hero from '@/components/landing/Hero';
@@ -14,9 +15,10 @@ export default function page() {
       <Hero />
       <About />
       <Education />
-      <Technology />
       <Experience />
+      <Technology />
       <Work />
+      <Certifications />
       <CTA />
     </Container>
   );
