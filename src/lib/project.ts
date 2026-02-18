@@ -153,7 +153,7 @@ export function getProjectNavigation(currentSlug: string): {
     previous: previousProject
       ? {
           title: previousProject.title,
-          slug: previousProject.projectDetailsPageSlug.replace(
+          slug: (previousProject.projectDetailsPageSlug ?? '').replace(
             '/projects/',
             '',
           ),
@@ -162,7 +162,10 @@ export function getProjectNavigation(currentSlug: string): {
     next: nextProject
       ? {
           title: nextProject.title,
-          slug: nextProject.projectDetailsPageSlug.replace('/projects/', ''),
+          slug: (nextProject.projectDetailsPageSlug ?? '').replace(
+            '/projects/',
+            '',
+          ),
         }
       : null,
   };
