@@ -1,3 +1,4 @@
+import AnimatedSection from '@/components/common/AnimatedSection';
 import Container from '@/components/common/Container';
 import About from '@/components/landing/About';
 import CTA from '@/components/landing/CTA';
@@ -12,14 +13,39 @@ import React from 'react';
 export default function page() {
   return (
     <Container className="min-h-screen py-13">
+      {/* Hero - No animation (already visible) */}
       <Hero />
-      <About />
-      <Education />
-      <Experience />
-      <Technology />
-      <Work />
-      <Certifications />
-      <CTA />
+
+      {/* About + Education */}
+      <AnimatedSection id="about">
+        <About />
+        <Education />
+      </AnimatedSection>
+
+      {/* Technology */}
+      <AnimatedSection id="tech">
+        <Technology />
+      </AnimatedSection>
+
+      {/* Experience */}
+      <AnimatedSection id="experience">
+        <Experience />
+      </AnimatedSection>
+
+      {/* Projects */}
+      <AnimatedSection id="projects">
+        <Work />
+      </AnimatedSection>
+
+      {/* Certifications */}
+      <AnimatedSection>
+        <Certifications />
+      </AnimatedSection>
+
+      {/* Contact */}
+      <AnimatedSection id="contact">
+        <CTA />
+      </AnimatedSection>
     </Container>
   );
 }
