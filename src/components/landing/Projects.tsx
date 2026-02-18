@@ -20,7 +20,9 @@ export default function Projects() {
 
       {/* Other Selected Projects Section */}
       <div className="mt-16">
-        <h3 className="mb-6 text-2xl font-semibold">Other Selected Projects</h3>
+        <h3 className="mb-6 text-2xl text-center font-semibold">
+          Other Selected Projects
+        </h3>
         <ProjectList projects={otherProjects} variant="other" />
       </div>
     </Container>
