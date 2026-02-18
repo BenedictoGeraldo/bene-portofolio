@@ -4,6 +4,7 @@ import CSS from '@/components/technologies/CSS';
 import Docker from '@/components/technologies/Docker';
 import Express from '@/components/technologies/Express';
 import Filament from '@/components/technologies/Filament';
+import FramerMotion from '@/components/technologies/FramerMotion';
 import Html from '@/components/technologies/Html';
 import InfinityFree from '@/components/technologies/InfinityFree';
 import JQuery from '@/components/technologies/JQuery';
@@ -134,15 +135,16 @@ export const projects: Project[] = [
 
   // ========== OTHER SELECTED PROJECTS ==========
   {
-    title: 'Portfolio Website',
+    title: 'Personal Portfolio',
     description: 'Modern personal portfolio with smooth UI',
-    image: '/project/portfolio-thumbnail.png',
-    link: 'https://yourportfolio.com', // LIVE - ganti dengan domain asli
+    image: '/project/portofolio-thumbnail.png',
+    // link: 'https://yourportfolio.com',
     technologies: [
       { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
       { name: 'Next.js', icon: <NextJs key="nextjs" /> },
       { name: 'Tailwind CSS', icon: <TailwindCss key="tailwind" /> },
       { name: 'Vercel', icon: <Vercel key="vercel" /> },
+      { name: 'Framer Motion', icon: <FramerMotion key="framer-motion" /> },
     ],
     github: 'https://github.com/BenedictoGeraldo/bene-portofolio.git',
     status: 'completed',

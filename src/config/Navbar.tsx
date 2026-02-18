@@ -10,5 +10,27 @@ export const navbarConfig = {
     width: 100,
     height: 100,
   },
-  navItems: [] as NavItem[], //can be adjusted as needed
+  navItems: [
+    ,
+    {
+      label: 'About',
+      href: '#about',
+    },
+    {
+      label: 'Experience',
+      href: '#experience',
+    },
+    {
+      label: 'Technology',
+      href: '#tech',
+    },
+    {
+      label: 'Projects',
+      href: '#projects',
+    },
+    {
+      label: 'Contact',
+      href: '#contact',
+    },
+  ] as NavItem[],
 };
