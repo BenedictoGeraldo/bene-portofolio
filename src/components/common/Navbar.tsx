@@ -19,10 +19,10 @@ export default function Navbar() {
               height={navbarConfig.logo.height}
             />
           </Link>
-          <div className="flex items-center justify-center gap-4">
+          <div className="hidden  md:flex items-center justify-center gap-3">
             {navbarConfig.navItems.map((item) => (
               <Link
-                className="transition-all duration-300 ease-in-out hover:underline hover:decoration-2 hover:underline-offset-4"
+                className="text-sm lg:text-base transition-all duration-300 ease-in-out hover:underline hover:decoration-2 hover:underline-offset-4"
                 key={item.label}
                 href={item.href}
               >
@@ -31,7 +31,7 @@ export default function Navbar() {
             ))}
           </div>
         </div>
-        <div className="flex items-center gap-4"></div>
+        <div className="flex items-center gap-2 sm:gap-4"></div>
       </div>
     </Container>
   );
