@@ -12,11 +12,9 @@ export default function EntranceAnimation() {
 
   useEffect(() => {
     setIsMounted(true);
-    // Reduce particles on mobile for better performance
     const particleCount =
       typeof window !== 'undefined' && window.innerWidth < 768 ? 6 : 12;
 
-    // Generate random particles for atmospheric effect - only on client
     setParticles(
       Array.from({ length: particleCount }).map((_, i) => ({
         id: i,
@@ -30,26 +28,23 @@ export default function EntranceAnimation() {
   useEffect(() => {
     if (!isMounted) return;
 
-    // Check if user has seen entrance
     const hasSeenEntrance = sessionStorage.getItem('hasSeenEntrance');
 
     if (hasSeenEntrance) {
       setShow(false);
+      document.body.style.overflow = '';
       return;
     }
 
-    // Hide after 4.5 seconds
     const timer = setTimeout(() => {
       setShow(false);
       sessionStorage.setItem('hasSeenEntrance', 'true');
+      document.body.style.overflow = '';
     }, 4500);
-
-    // Prevent scrolling during entrance
-    document.body.style.overflow = 'hidden';
 
     return () => {
       clearTimeout(timer);
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = '';
     };
   }, [isMounted]);
 
@@ -63,10 +58,8 @@ export default function EntranceAnimation() {
           transition={{ duration: 0.6 }}
           className="fixed inset-0 z-[9999] flex items-center justify-center bg-black overflow-hidden w-screen h-screen"
         >
-          {/* Atmospheric fog/gradient overlay */}
           <div className="absolute inset-0 bg-gradient-to-b from-slate-950 via-black to-slate-950 opacity-80" />
 
-          {/* Mystical particles */}
           {particles.map((particle) => (
             <motion.div
               key={particle.id}
@@ -82,7 +75,6 @@ export default function EntranceAnimation() {
             />
           ))}
 
-          {/* Central glow effect */}
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: [0, 0.3, 0.2], scale: [0, 2, 1.5] }}
@@ -90,9 +82,7 @@ export default function EntranceAnimation() {
             className="absolute w-32 h-32 sm:w-60 sm:h-60 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-slate-600 rounded-full blur-3xl opacity-20 pointer-events-none"
           />
 
-          {/* Main text container */}
           <div className="relative z-10 text-center px-2 sm:px-4 md:px-6 lg:px-8 w-full max-w-xs sm:max-w-sm md:max-w-2xl lg:max-w-4xl">
-            {/* Quote text - main */}
             <motion.div
               initial={{ opacity: 0, y: 40, scale: 0.9 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -114,7 +104,6 @@ export default function EntranceAnimation() {
               </h1>
             </motion.div>
 
-            {/* Subtitle - appears after main quote */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 0.8, y: 0 }}
@@ -125,7 +114,6 @@ export default function EntranceAnimation() {
               }}
             ></motion.div>
 
-            {/* Decorative line - appears with quote */}
             <motion.div
               initial={{ scaleX: 0, opacity: 0 }}
               animate={{ scaleX: 1, opacity: 0.6 }}
@@ -137,7 +125,6 @@ export default function EntranceAnimation() {
               className="my-2 sm:my-4 md:my-6 h-px bg-gradient-to-r from-transparent via-slate-500 to-transparent origin-center w-full"
             />
 
-            {/* Fading text at bottom */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: [0, 1, 0] }}
@@ -153,7 +140,6 @@ export default function EntranceAnimation() {
             </motion.div>
           </div>
 
-          {/* Bottom fade gradient */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 0.4 }}
