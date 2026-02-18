@@ -10,11 +10,13 @@ import {
 } from '@/components/ui/carousel';
 import {
   Dialog,
+  DialogClose,
   DialogContent,
   DialogTitle,
   DialogTrigger,
 } from '@/components/ui/dialog';
 import { ScreenshotItem } from '@/types/project';
+import { X } from 'lucide-react';
 import Image from 'next/image';
 import React, { useState } from 'react';
 
@@ -54,15 +56,22 @@ export function ScreenshotGallery({
         </Button>
       </DialogTrigger>
 
-      <DialogContent className="max-w-5xl p-0">
+      <DialogContent
+        className="block w-[calc(100vw-2rem)] max-w-3xl p-0 max-h-[90vh] overflow-hidden"
+        showCloseButton={false}
+      >
         <DialogTitle className="sr-only">
           {projectTitle} - Screenshots Gallery
         </DialogTitle>
-        <Carousel className="w-full">
+        <DialogClose className="absolute top-3 right-3 z-10 rounded-full bg-black/80 p-1.5 text-white hover:bg-black transition-colors">
+          <X className="size-4" />
+          <span className="sr-only">Close</span>
+        </DialogClose>
+        <Carousel className="w-full overflow-hidden">
           <CarouselContent>
             {screenshots.map((screenshot, index) => (
               <CarouselItem key={index}>
-                <div className="space-y-4 p-6">
+                <div className="space-y-3 p-3 sm:p-6">
                   <div className="relative aspect-video w-full overflow-hidden rounded-lg border bg-muted">
                     <Image
                       src={screenshot.src}

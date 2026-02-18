@@ -1,3 +1,4 @@
+import { CodeCopyButton } from '@/components/blog/CodeCopyButton';
 import Bun from '@/components/technologies/Bun';
 import JavaScript from '@/components/technologies/JavaScript';
 import MongoDB from '@/components/technologies/MongoDB';
@@ -11,8 +12,6 @@ import TypeScript from '@/components/technologies/TypeScript';
 import { Badge } from '@/components/ui/badge';
 import Image from 'next/image';
 import React from 'react';
-
-import { CodeCopyButton } from '../blog/CodeCopyButton';
 
 // Technology mapping for dynamic components
 const TechnologyComponents: Record<string, React.ComponentType> = {
