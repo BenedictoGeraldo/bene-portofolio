@@ -1,14 +1,10 @@
 import { type Experience } from '@/config/Experience';
-import { cn } from '@/lib/utils';
 import { Link } from 'next-view-transitions';
 import Image from 'next/image';
 import React from 'react';
 
-import Skill from '../common/Skill';
-import Github from '../svgs/Github';
 import LinkedIn from '../svgs/LinkedIn';
 import Website from '../svgs/Website';
-import X from '../svgs/X';
 import { Tooltip, TooltipContent, TooltipTrigger } from '../ui/tooltip';
 
 interface ExperienceCardProps {
@@ -35,14 +31,7 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
           />
           <div className="flex flex-col">
             <div className="flex items-center gap-2">
-              <h3
-                className={cn(
-                  'text-lg font-bold',
-                  experience.isBlur ? 'blur-[5px]' : 'blur-none',
-                )}
-              >
-                {experience.company}
-              </h3>
+              <h3 className="text-lg font-bold">{experience.company}</h3>
               {experience.website && (
                 <Tooltip>
                   <TooltipTrigger asChild>
@@ -55,20 +44,6 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
                     </Link>
                   </TooltipTrigger>
                   <TooltipContent>Visit Website</TooltipContent>
-                </Tooltip>
-              )}
-              {experience.x && (
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <Link
-                      href={experience.x}
-                      target="_blank"
-                      className="size-4 text-neutral-500"
-                    >
-                      <X />
-                    </Link>
-                  </TooltipTrigger>
-                  <TooltipContent>Follow on X</TooltipContent>
                 </Tooltip>
               )}
               {experience.linkedin && (
@@ -85,24 +60,12 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
                   <TooltipContent>Connect on LinkedIn</TooltipContent>
                 </Tooltip>
               )}
-              {experience.github && (
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <Link
-                      href={experience.github}
-                      target="_blank"
-                      className="size-4 text-neutral-500"
-                    >
-                      <Github />
-                    </Link>
-                  </TooltipTrigger>
-                  <TooltipContent>View GitHub</TooltipContent>
-                </Tooltip>
-              )}
               {experience.isCurrent && (
                 <div className="flex items-center gap-1 rounded-md border-green-300 bg-green-500/10 px-2 py-1 text-xs">
                   <div className="size-2 animate-pulse rounded-full bg-green-500"></div>
-                  Working
+                  {experience.position.toLowerCase().includes('volunteer')
+                    ? 'Volunteering'
+                    : 'Working'}
                 </div>
               )}
             </div>
@@ -116,22 +79,6 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
             {experience.isCurrent ? 'Present' : experience.endDate}
           </p>
           <p>{experience.location}</p>
-        </div>
-      </div>
-
-      {/* Technologies */}
-      <div>
-        <h4 className="text-md mt-4 mb-2 font-semibold">Technologies</h4>
-        <div className="flex flex-wrap gap-2">
-          {experience.technologies.map((technology, techIndex: number) => (
-            <Skill
-              key={techIndex}
-              name={technology.name}
-              href={technology.href}
-            >
-              {technology.icon}
-            </Skill>
-          ))}
         </div>
       </div>
 
