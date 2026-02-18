@@ -6,6 +6,7 @@ import Express from '@/components/technologies/Express';
 import Filament from '@/components/technologies/Filament';
 import Html from '@/components/technologies/Html';
 import InfinityFree from '@/components/technologies/InfinityFree';
+import JQuery from '@/components/technologies/JQuery';
 import JavaScript from '@/components/technologies/JavaScript';
 import Laravel from '@/components/technologies/Laravel';
 import MySQL from '@/components/technologies/MySQL';
@@ -16,6 +17,7 @@ import Postman from '@/components/technologies/Postman';
 import TailwindCss from '@/components/technologies/TailwindCss';
 import Twilio from '@/components/technologies/Twilio';
 import TypeScript from '@/components/technologies/TypeScript';
+import Vercel from '@/components/technologies/Vercel';
 import WordPress from '@/components/technologies/WordPress';
 import { Project } from '@/types/project';
 
@@ -96,6 +98,7 @@ export const projects: Project[] = [
     link: 'https://mari-futsal-halim.kesug.com/', // LIVE - ganti dengan URL asli
     technologies: [
       { name: 'WordPress', icon: <WordPress key="wordpress" /> },
+      { name: 'JQuery', icon: <JQuery key="jquery" /> },
       { name: 'Tailwind CSS', icon: <TailwindCss key="tailwind" /> },
       { name: 'MySQL', icon: <MySQL key="mysql" /> },
       { name: 'InfinityFree', icon: <InfinityFree key="infinityfree" /> },
@@ -139,16 +142,17 @@ export const projects: Project[] = [
       { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
       { name: 'Next.js', icon: <NextJs key="nextjs" /> },
       { name: 'Tailwind CSS', icon: <TailwindCss key="tailwind" /> },
+      { name: 'Vercel', icon: <Vercel key="vercel" /> },
     ],
     github: 'https://github.com/BenedictoGeraldo/bene-portofolio.git',
     status: 'completed',
     type: 'other',
   },
   {
-    title: 'Asset Management System',
+    title: 'PELITA',
     description: 'Enterprise asset management system',
     image: '/project/pelita-thumbnail.png',
-    link: null, // Ongoing
+    link: null,
     screenshots: [
       { src: '/project/pelita/login.png', caption: 'Login' },
       { src: '/project/pelita/category-list.png', caption: 'List Categories' },
