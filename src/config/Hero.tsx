@@ -104,7 +104,7 @@ export const heroConfig = {
   // Description Configuration
   description: {
     template:
-      'I build interactive web apps using {skills:1}, {skills:5}, {skills:2}, {skills:3} and {skills:6} I enjoy crafting clean UI, developing reliable backend systems, and continuously improving my skills. I am passionate about learning new technologies and staying up-to-date with industry trends',
+      'I build interactive web apps using {skills:1}, {skills:5}, {skills:2}, {skills:3} and {skills:6}I enjoy crafting clean UI, developing reliable backend systems, and continuously improving my skills. I am passionate about learning new technologies and staying up-to-date with industry trends',
   },
 
   // Buttons Configuration
