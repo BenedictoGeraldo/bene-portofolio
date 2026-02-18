@@ -29,7 +29,7 @@ export default function Technology() {
                         rel="noopener noreferrer"
                         className="group flex flex-col items-center gap-3 rounded-lg border border-border bg-card p-4 transition-all duration-300 hover:scale-110 hover:border-primary hover:shadow-lg"
                       >
-                        <div className="size-12 transition-transform duration-300 group-hover:scale-110">
+                        <div className="size-12 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
                           <IconComponent />
                         </div>
                         <span className="text-xs font-medium text-center text-muted-foreground group-hover:text-primary">
