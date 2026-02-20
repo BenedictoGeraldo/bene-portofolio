@@ -23,7 +23,7 @@ export const certifications: Certification[] = [
   },
   {
     title: 'Fundamental Junior Web Developer',
-    issuer: 'KOMDIGI',
+    issuer: 'Kementerian Komunikasi dan Digital',
     issueDate: 'August 2025',
     images: [
       '/certifications/fundamental-junior-web-1.png',
@@ -32,7 +32,7 @@ export const certifications: Certification[] = [
   },
   {
     title: 'Intermediate Junior Web Developer',
-    issuer: 'KOMDIGI',
+    issuer: 'Kementerian Komunikasi dan Digital',
     issueDate: 'August 2025',
     images: [
       '/certifications/intermediate-junior-web-1.png',
@@ -41,7 +41,7 @@ export const certifications: Certification[] = [
   },
   {
     title: 'Konsep Pemrograman',
-    issuer: 'KOMDIGI',
+    issuer: 'Kementerian Komunikasi dan Digital',
     issueDate: 'August 2025',
     images: [
       '/certifications/konsep-pemrograman-1.png',
@@ -57,5 +57,11 @@ export const certifications: Certification[] = [
       '/certifications/dasar-web-2.png',
       '/certifications/dasar-web-3.png',
     ],
+  },
+  {
+    title: 'Certificate of Completion Web Development Multimedia',
+    issuer: 'KSM Multimedia UPNVJ',
+    issueDate: 'February 2026',
+    images: ['/certifications/sertif-multimedia.png'],
   },
 ];
