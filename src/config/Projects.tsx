@@ -183,7 +183,7 @@ export const projects: Project[] = [
     title: 'Personal Portfolio',
     description: 'Modern personal portfolio with smooth UI',
     image: '/project/portofolio-thumbnail.png',
-    link: 'https://bene-portofolio.vercel.app/',
+    link: 'https://benedicto-geraldo.vercel.app/',
     technologies: [
       { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
       { name: 'Next.js', icon: <NextJs key="nextjs" /> },
