@@ -83,17 +83,19 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
       </div>
 
       {/* Description */}
-      <div className="text-secondary flex flex-col">
-        {experience.description.map(
-          (description: string, descIndex: number) => (
-            <p
-              key={descIndex}
-              dangerouslySetInnerHTML={{
-                __html: `• ${parseDescription(description)}`,
-              }}
-            />
-          ),
-        )}
+      <div className="text-secondary">
+        <ul className="list-disc space-y-2 pl-5">
+          {experience.description.map(
+            (description: string, descIndex: number) => (
+              <li
+                key={descIndex}
+                dangerouslySetInnerHTML={{
+                  __html: parseDescription(description),
+                }}
+              />
+            ),
+          )}
+        </ul>
       </div>
     </div>
   );
