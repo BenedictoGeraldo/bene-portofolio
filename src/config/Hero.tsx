@@ -1,33 +1,10 @@
-/*
- * CUSTOMIZATION EXAMPLE
- *
- * Want to customize this portfolio for yourself? Here's how easy it is:
- *
- * 1. Update your personal info:
- *    name: "Your Name"
- *    title: "Your Professional Title"
- *    avatar: "/path/to/your/image.jpg"
- *
- * 2. Add your skills:
- *    skills: [
- *      { name: "Python", href: "https://python.org", component: "Python" }, // Note: You'd need to create Python component
- *      { name: "React", href: "https://react.dev", component: "ReactIcon" },
- *      { name: "Node.js", href: "https://nodejs.org", component: "NodeJs" },
- *    ]
- *
- * 3. Write your description using the template:
- *    template: "I'm a **passionate developer** who loves building apps with {skills:0} and {skills:1}. I specialize in **web development** and enjoy working with {skills:2}."
- *
- * 4. Update your social links:
- *    Just change the href values to your own social media profiles
- *
- * That's it! Your portfolio will automatically update with your information.
- */
 import Github from '@/components/svgs/Github';
 import LinkedIn from '@/components/svgs/LinkedIn';
 import Mail from '@/components/svgs/Mail';
 import Bun from '@/components/technologies/Bun';
+import Cypress from '@/components/technologies/Cypress';
 import JavaScript from '@/components/technologies/JavaScript';
+import Jest from '@/components/technologies/Jest';
 import Laravel from '@/components/technologies/Laravel';
 import MongoDB from '@/components/technologies/MongoDB';
 import MySQL from '@/components/technologies/MySQL';
@@ -36,7 +13,6 @@ import NodeJs from '@/components/technologies/NodeJs';
 import PostgreSQL from '@/components/technologies/PostgreSQL';
 import Prisma from '@/components/technologies/Prisma';
 import ReactIcon from '@/components/technologies/ReactIcon';
-// Technology Components
 import TypeScript from '@/components/technologies/TypeScript';
 import WordPress from '@/components/technologies/WordPress';
 
@@ -53,13 +29,15 @@ export const skillComponents = {
   JavaScript: JavaScript,
   WordPress: WordPress,
   Laravel: Laravel,
+  Cypress: Cypress,
+  Jest: Jest,
   MySQL: MySQL,
 };
 
 export const heroConfig = {
   // Personal Information
   name: 'Benedicto Geraldo Doa Dawa',
-  title: 'Junior web developer.',
+  title: 'Web developer & QA Enthusiast.',
   avatar: '/assets/logo.jpg',
 
   // Skills Configuration
@@ -99,12 +77,22 @@ export const heroConfig = {
       href: 'https://www.mysql.com/',
       component: 'MySQL',
     },
+    {
+      name: 'Cypress',
+      href: 'https://www.cypress.io/',
+      component: 'Cypress',
+    },
+    {
+      name: 'Jest',
+      href: 'https://jestjs.io/',
+      component: 'Jest',
+    },
   ],
 
   // Description Configuration
   description: {
     template:
-      'I build interactive web apps using {skills:1}, {skills:5}, {skills:2}, {skills:3} and {skills:6}I enjoy crafting clean UI, developing reliable backend systems, and continuously improving my skills. I am passionate about learning new technologies and staying up-to-date with industry trends',
+      'Web developer and QA enthusiast focused on delivering reliable, scalable, and well-tested applications. I combine modern web technologies such as {skills:1}, {skills:2}, and {skills:5} with automated testing using {skills:7} and {skills:8} to ensure consistent quality, stability, and performance.',
   },
 
   // Buttons Configuration

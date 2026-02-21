@@ -16,6 +16,22 @@ export const certifications: Certification[] = [
     ],
   },
   {
+    title: 'Certificate of Completion Web Development Multimedia',
+    issuer: 'KSM Multimedia UPNVJ',
+    issueDate: 'February 2026',
+    images: ['/certifications/sertif-multimedia.png'],
+  },
+  {
+    title: 'Belajar Dasar Pemrograman Web',
+    issuer: 'Dicoding',
+    issueDate: 'May 2024',
+    images: [
+      '/certifications/dasar-web-1.png',
+      '/certifications/dasar-web-2.png',
+      '/certifications/dasar-web-3.png',
+    ],
+  },
+  {
     title: 'Maju Bareng AI',
     issuer: 'Hacktiv8',
     issueDate: 'August 2025',
@@ -47,21 +63,5 @@ export const certifications: Certification[] = [
       '/certifications/konsep-pemrograman-1.png',
       '/certifications/konsep-pemrograman-2.png',
     ],
-  },
-  {
-    title: 'Belajar Dasar Pemrograman Web',
-    issuer: 'Dicoding',
-    issueDate: 'May 2024',
-    images: [
-      '/certifications/dasar-web-1.png',
-      '/certifications/dasar-web-2.png',
-      '/certifications/dasar-web-3.png',
-    ],
-  },
-  {
-    title: 'Certificate of Completion Web Development Multimedia',
-    issuer: 'KSM Multimedia UPNVJ',
-    issueDate: 'February 2026',
-    images: ['/certifications/sertif-multimedia.png'],
   },
 ];
