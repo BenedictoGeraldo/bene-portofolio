@@ -1,12 +1,14 @@
 import Axios from '@/components/technologies/Axios';
 import BootStrap from '@/components/technologies/BootStrap';
 import CSS from '@/components/technologies/CSS';
+import Cypress from '@/components/technologies/Cypress';
 import Docker from '@/components/technologies/Docker';
 import Express from '@/components/technologies/Express';
 import Filament from '@/components/technologies/Filament';
 import FramerMotion from '@/components/technologies/FramerMotion';
 import Html from '@/components/technologies/Html';
 import InfinityFree from '@/components/technologies/InfinityFree';
+import JMeter from '@/components/technologies/JMeter';
 import JQuery from '@/components/technologies/JQuery';
 import JavaScript from '@/components/technologies/JavaScript';
 import Laravel from '@/components/technologies/Laravel';
@@ -15,11 +17,13 @@ import NestJs from '@/components/technologies/NestJs';
 import NextJs from '@/components/technologies/NextJs';
 import PostgreSQL from '@/components/technologies/PostgreSQL';
 import Postman from '@/components/technologies/Postman';
+import SonarQube from '@/components/technologies/SonarQube';
 import TailwindCss from '@/components/technologies/TailwindCss';
 import Twilio from '@/components/technologies/Twilio';
 import TypeScript from '@/components/technologies/TypeScript';
 import Vercel from '@/components/technologies/Vercel';
 import WordPress from '@/components/technologies/WordPress';
+import Zap from '@/components/technologies/Zap';
 import { Project } from '@/types/project';
 
 export const projects: Project[] = [
@@ -92,6 +96,47 @@ export const projects: Project[] = [
     projectDetailsPageSlug: '/projects/stark',
   },
   {
+    title: 'Evershop Quality Assurance Project',
+    description:
+      'STQA project for Evershop E-commerce, covering end-to-end, performance, security, and code quality testing',
+    image: '/project/stqa-evershop/evershop-thumbnail.png',
+    link: null,
+    screenshots: [
+      {
+        src: '/project/stqa-evershop/cypress-1.jpg',
+        caption: 'End to End Testing with Cypress',
+      },
+      {
+        src: '/project/stqa-evershop/cypress-wcag.jpg',
+        caption: 'WCAG Testing with Cypress-axe',
+      },
+      {
+        src: '/project/stqa-evershop/jmeter-1.jpg',
+        caption: 'Performance Testing with Apache JMeter',
+      },
+      {
+        src: '/project/stqa-evershop/postman-1.jpg',
+        caption: 'API Testing with Postman',
+      },
+      {
+        src: '/project/stqa-evershop/sonarqube-1.jpg',
+        caption: 'Code Quality Analysis with SonarQube',
+      },
+    ],
+    technologies: [
+      { name: 'Cypress', icon: <Cypress key="cypress" /> },
+      { name: 'SonarQube', icon: <SonarQube key="sonarqube" /> },
+      { name: 'OWASP ZAP', icon: <Zap key="zap" /> },
+      { name: 'Apache JMeter', icon: <JMeter key="jmeter" /> },
+      { name: 'Postman', icon: <Postman key="postman" /> },
+    ],
+    github: 'https://github.com/BenedictoGeraldo/STQA-for-evershop.git',
+    status: 'completed',
+    type: 'featured',
+    details: false,
+    projectDetailsPageSlug: '/projects/stqa-evershop',
+  },
+  {
     title: 'Mari Futsal',
     description:
       'A fully customized WordPress website with optimized performance, custom features, and production deployment',
@@ -115,7 +160,7 @@ export const projects: Project[] = [
     description:
       'An enterprise-scale information system focusing on modular architecture, scalability, and clean design',
     image: '/project/myhr-thumbnail.png',
-    link: null, // Ongoing - belum live
+    link: null,
     technologies: [
       { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
       { name: 'NextJs', icon: <NextJs key="nextjs" /> },
