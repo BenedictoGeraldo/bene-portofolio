@@ -17,12 +17,12 @@ export const navbarConfig = {
       href: '#about',
     },
     {
-      label: 'Experience',
-      href: '#experience',
-    },
-    {
       label: 'Technology',
       href: '#tech',
+    },
+    {
+      label: 'Experience',
+      href: '#experience',
     },
     {
       label: 'Projects',
