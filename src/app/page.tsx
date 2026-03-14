@@ -22,14 +22,14 @@ export default function page() {
         <Education />
       </AnimatedSection>
 
-      {/* Technology */}
-      <AnimatedSection id="tech">
-        <Technology />
-      </AnimatedSection>
-
       {/* Experience */}
       <AnimatedSection id="experience">
         <Experience />
+      </AnimatedSection>
+
+      {/* Technology */}
+      <AnimatedSection id="tech">
+        <Technology />
       </AnimatedSection>
 
       {/* Projects */}
@@ -38,7 +38,7 @@ export default function page() {
       </AnimatedSection>
 
       {/* Certifications */}
-      <AnimatedSection>
+      <AnimatedSection id="certifications">
         <Certifications />
       </AnimatedSection>
 
