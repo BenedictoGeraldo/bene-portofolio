@@ -13,9 +13,9 @@ import JQuery from '@/components/technologies/JQuery';
 import JavaScript from '@/components/technologies/JavaScript';
 import Laravel from '@/components/technologies/Laravel';
 import MySQL from '@/components/technologies/MySQL';
-import NestJs from '@/components/technologies/NestJs';
+// import NestJs from '@/components/technologies/NestJs';
 import NextJs from '@/components/technologies/NextJs';
-import PostgreSQL from '@/components/technologies/PostgreSQL';
+// import PostgreSQL from '@/components/technologies/PostgreSQL';
 import Postman from '@/components/technologies/Postman';
 import SonarQube from '@/components/technologies/SonarQube';
 import TailwindCss from '@/components/technologies/TailwindCss';
@@ -155,28 +155,28 @@ export const projects: Project[] = [
     details: false,
     projectDetailsPageSlug: '/projects/mari-futsal',
   },
-  {
-    title: 'MyHR',
-    description:
-      'An enterprise-scale information system focusing on modular architecture, scalability, and clean design',
-    image: '/project/myhr-thumbnail.png',
-    link: null,
-    technologies: [
-      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
-      { name: 'NextJs', icon: <NextJs key="nextjs" /> },
-      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwind" /> },
-      { name: 'Axios', icon: <Axios key="axios" /> },
-      { name: 'NestJs', icon: <NestJs key="nestjs" /> },
-      { name: 'PostgreSQL', icon: <PostgreSQL key="postgresql" /> },
-      { name: 'Postman', icon: <Postman key="postman" /> },
-      { name: 'Docker', icon: <Docker key="docker" /> },
-    ],
-    github: null,
-    status: 'ongoing',
-    type: 'featured',
-    details: false,
-    projectDetailsPageSlug: '/projects/myhr',
-  },
+  // {
+  //   title: 'MyHR',
+  //   description:
+  //     'An enterprise-scale information system focusing on modular architecture, scalability, and clean design',
+  //   image: '/project/myhr-thumbnail.png',
+  //   link: null,
+  //   technologies: [
+  //     { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
+  //     { name: 'NextJs', icon: <NextJs key="nextjs" /> },
+  //     { name: 'Tailwind CSS', icon: <TailwindCss key="tailwind" /> },
+  //     { name: 'Axios', icon: <Axios key="axios" /> },
+  //     { name: 'NestJs', icon: <NestJs key="nestjs" /> },
+  //     { name: 'PostgreSQL', icon: <PostgreSQL key="postgresql" /> },
+  //     { name: 'Postman', icon: <Postman key="postman" /> },
+  //     { name: 'Docker', icon: <Docker key="docker" /> },
+  //   ],
+  //   github: null,
+  //   status: 'ongoing',
+  //   type: 'featured',
+  //   details: false,
+  //   projectDetailsPageSlug: '/projects/myhr',
+  // },
 
   // ========== OTHER SELECTED PROJECTS ==========
   {

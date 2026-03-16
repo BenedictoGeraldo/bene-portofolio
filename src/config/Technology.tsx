@@ -10,7 +10,7 @@ import Jest from '@/components/technologies/Jest';
 import Laravel from '@/components/technologies/Laravel';
 import MongoDB from '@/components/technologies/MongoDB';
 import MySQL from '@/components/technologies/MySQL';
-import NestJs from '@/components/technologies/NestJs';
+// import NestJs from '@/components/technologies/NestJs';
 import NextJs from '@/components/technologies/NextJs';
 import Php from '@/components/technologies/Php';
 import PostgreSQL from '@/components/technologies/PostgreSQL';
@@ -88,11 +88,11 @@ export const technologyConfig = {
           component: Express,
           href: 'https://expressjs.com/',
         },
-        {
-          name: 'NestJs',
-          component: NestJs,
-          href: 'https://nestjs.com/',
-        },
+        // {
+        //   name: 'NestJs',
+        //   component: NestJs,
+        //   href: 'https://nestjs.com/',
+        // },
         {
           name: 'Laravel',
           component: Laravel,
