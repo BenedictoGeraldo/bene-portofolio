@@ -13,10 +13,13 @@ import JQuery from '@/components/technologies/JQuery';
 import JavaScript from '@/components/technologies/JavaScript';
 import Laravel from '@/components/technologies/Laravel';
 import MySQL from '@/components/technologies/MySQL';
-// import NestJs from '@/components/technologies/NestJs';
+import NestJs from '@/components/technologies/NestJs';
+import Netlify from '@/components/technologies/Netlify';
 import NextJs from '@/components/technologies/NextJs';
-// import PostgreSQL from '@/components/technologies/PostgreSQL';
+import PostgreSQL from '@/components/technologies/PostgreSQL';
 import Postman from '@/components/technologies/Postman';
+import Prisma from '@/components/technologies/Prisma';
+import Replit from '@/components/technologies/Replit';
 import SonarQube from '@/components/technologies/SonarQube';
 import TailwindCss from '@/components/technologies/TailwindCss';
 import Twilio from '@/components/technologies/Twilio';
@@ -28,39 +31,48 @@ import { Project } from '@/types/project';
 
 export const projects: Project[] = [
   {
-    title: 'Pelayanan Kode NCAGE',
+    title: 'Sinemaku',
     description:
-      'Government-grade system to manage registration and updating of NCAGE codes with secure workflows',
-    image: '/project/thumbnail-ncage.png',
-    link: null,
+      'Sinemaku is a movie discovery platform that lets users explore films, search for titles, and manage a personal watchlist.',
+    image: '/project/sinemaku/sinemaku-thumbnail.png',
+    link: 'https://sinemaku-bybeneben.vercel.app/',
     screenshots: [
-      { src: '/project/ncage/login.png', caption: 'Login Page' },
       {
-        src: '/project/ncage/ncage-registration-form.png',
-        caption: 'NCAGE Registration Form',
+        src: '/project/sinemaku/sinemaku-thumbnail.png',
+        caption: 'Home Page',
       },
       {
-        src: '/project/ncage/monitoring-status.png',
-        caption: 'Registration NCAGE Status Monitoring',
+        src: '/project/sinemaku/login-page.png',
+        caption: 'Login Page',
       },
       {
-        src: '/project/ncage/admin-dashboard.png',
-        caption: 'Admin Dashboard',
+        src: '/project/sinemaku/search-page.png',
+        caption: 'Search Page',
+      },
+      {
+        src: '/project/sinemaku/watchlist-page.png',
+        caption: 'Watchlist Page',
       },
     ],
     technologies: [
-      { name: 'Laravel', icon: <Laravel key="laravel" /> },
-      { name: 'MySQL', icon: <MySQL key="mysql" /> },
-      { name: 'Bootstrap', icon: <BootStrap key="bootstrap" /> },
-      { name: 'Filament', icon: <Filament key="filament" /> },
-      { name: 'Twilio', icon: <Twilio key="twilio" /> },
+      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
+      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
+      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwind" /> },
+      { name: 'Axios', icon: <Axios key="axios" /> },
+      { name: 'NestJs', icon: <NestJs key="nestjs" /> },
+      { name: 'PostgreSQL', icon: <PostgreSQL key="postgresql" /> },
+      { name: 'Prisma', icon: <Prisma key="prisma" /> },
+      { name: 'Postman', icon: <Postman key="postman" /> },
+      { name: 'Vercel', icon: <Vercel key="vercel" /> },
+      { name: 'Replit', icon: <Replit key="replit" /> },
     ],
-    github: 'https://github.com/BenedictoGeraldo/Project_NCAGE.git',
+    github: 'https://github.com/BenedictoGeraldo/sinemaku-fe.git',
     status: 'completed',
     type: 'featured',
     details: false,
-    projectDetailsPageSlug: '/projects/ncage',
+    projectDetailsPageSlug: '/projects/sinemaku',
   },
+
   {
     title: 'STARK',
     description:
@@ -94,6 +106,35 @@ export const projects: Project[] = [
     type: 'featured',
     details: false,
     projectDetailsPageSlug: '/projects/stark',
+  },
+  {
+    title: 'Can Do',
+    description:
+      'A clean and minimal to-do list app enhanced with AI assistance to keep you focused and productive',
+    image: '/project/can-do/can-do-thumbnail.png',
+    link: 'https://can-do-bybeneben.netlify.app/',
+    screenshots: [
+      {
+        src: '/project/can-do/can-do-thumbnail.png',
+        caption: 'Landing Page',
+      },
+      {
+        src: '/project/can-do/can-do-2.png',
+        caption: 'To Do List Page',
+      },
+    ],
+    technologies: [
+      { name: 'NextJS', icon: <NextJs key="nextjs" /> },
+      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwind" /> },
+      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
+      { name: 'Netlify', icon: <Netlify key="netlify" /> },
+      { name: 'Axios', icon: <Axios key="axios" /> },
+    ],
+    github: 'https://github.com/BenedictoGeraldo/mini-todolist.git',
+    status: 'completed',
+    type: 'featured',
+    details: false,
+    projectDetailsPageSlug: '/projects/can-do',
   },
   {
     title: 'Evershop Quality Assurance Project',
@@ -155,6 +196,42 @@ export const projects: Project[] = [
     details: false,
     projectDetailsPageSlug: '/projects/mari-futsal',
   },
+
+  {
+    title: 'Pelayanan Kode NCAGE',
+    description:
+      'Government-grade system to manage registration and updating of NCAGE codes with secure workflows',
+    image: '/project/thumbnail-ncage.png',
+    link: null,
+    screenshots: [
+      { src: '/project/ncage/login.png', caption: 'Login Page' },
+      {
+        src: '/project/ncage/ncage-registration-form.png',
+        caption: 'NCAGE Registration Form',
+      },
+      {
+        src: '/project/ncage/monitoring-status.png',
+        caption: 'Registration NCAGE Status Monitoring',
+      },
+      {
+        src: '/project/ncage/admin-dashboard.png',
+        caption: 'Admin Dashboard',
+      },
+    ],
+    technologies: [
+      { name: 'Laravel', icon: <Laravel key="laravel" /> },
+      { name: 'MySQL', icon: <MySQL key="mysql" /> },
+      { name: 'Bootstrap', icon: <BootStrap key="bootstrap" /> },
+      { name: 'Filament', icon: <Filament key="filament" /> },
+      { name: 'Twilio', icon: <Twilio key="twilio" /> },
+    ],
+    github: 'https://github.com/BenedictoGeraldo/Project_NCAGE.git',
+    status: 'completed',
+    type: 'featured',
+    details: false,
+    projectDetailsPageSlug: '/projects/ncage',
+  },
+
   // {
   //   title: 'MyHR',
   //   description:
