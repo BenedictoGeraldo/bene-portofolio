@@ -1,33 +1,92 @@
 import EntranceAnimation from '@/components/common/EntranceAnimation';
 import Footer from '@/components/common/Footer';
 import Navbar from '@/components/common/Navbar';
-import { generateMetadata as getMetadata } from '@/config/Meta';
 import ReactLenis from 'lenis/react';
+import type { Metadata } from 'next';
 import { ViewTransitions } from 'next-view-transitions';
 import { Cinzel } from 'next/font/google';
 
 import './globals.css';
 
-export const metadata = getMetadata('/');
 const cinzel = Cinzel({
   subsets: ['latin'],
   weight: ['400', '600'],
   variable: '--font-cinzel',
 });
 
+export const metadata: Metadata = {
+  metadataBase: new URL('https://benedicto-geraldo-doa-dawa.com'),
+
+  title: {
+    default: 'Benedicto Geraldo Doa Dawa - Web Developer & QA Enthusiast',
+    template: '%s | Benedicto Geraldo Doa Dawa',
+  },
+
+  description:
+    'Portfolio Benedicto Geraldo Doa Dawa, Web Developer dan QA Enthusiast yang berfokus pada Next.js, React, dan Laravel.',
+
+  keywords: [
+    'benedicto geraldo doa dawa',
+    'web developer indonesia',
+    'next js developer',
+    'react developer',
+    'laravel developer',
+    'portfolio web developer',
+  ],
+
+  authors: [{ name: 'Benedicto Geraldo Doa Dawa' }],
+  creator: 'Benedicto Geraldo Doa Dawa',
+
+  openGraph: {
+    title: 'Benedicto Geraldo Doa Dawa Portfolio',
+    description: 'Web Developer & QA Enthusiast',
+    url: 'https://benedicto-geraldo-doa-dawa.com',
+    siteName: 'Benedicto Geraldo Doa Dawa Portfolio',
+    locale: 'id_ID',
+    type: 'website',
+    images: [
+      {
+        url: '/logo.png',
+        width: 1200,
+        height: 630,
+        alt: 'Benedicto Geraldo Doa Dawa Portfolio',
+      },
+    ],
+  },
+
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Benedicto Geraldo Doa Dawa Portfolio',
+    description: 'Web Developer & QA Enthusiast',
+    images: ['/logo.png'],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+
+  icons: {
+    icon: '/favicon.ico',
+  },
+};
+
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <ViewTransitions>
-      <html lang="en" className="dark" suppressHydrationWarning>
-        <body className={` ${cinzel.variable} font-hanken-grotesk antialiased`}>
+      <html lang="id" className="dark" suppressHydrationWarning>
+        <body className={`${cinzel.variable} font-hanken-grotesk antialiased`}>
           <EntranceAnimation />
+
           <ReactLenis root>
             <Navbar />
-            {children}
+
+            <main>{children}</main>
+
             <Footer />
           </ReactLenis>
         </body>

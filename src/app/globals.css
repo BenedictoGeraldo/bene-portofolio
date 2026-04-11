@@ -145,7 +145,6 @@
   font-family: 'Hanken Grotesk Italic', sans-serif;
 }
 
-/* Code block copy button styles */
 .prose pre {
   @apply relative;
 }
@@ -154,7 +153,6 @@
   @apply opacity-100;
 }
 
-/* Page fade-in animation with blur */
 @keyframes fadeInBlur {
   0% {
     opacity: 0.2;
@@ -173,9 +171,6 @@
   filter: blur(3px);
 }
 
-/* Removed global View Transition API overrides to allow Skiper toggle styles to apply */
-
-/* Custom button inner shadow */
 .btn-inner-shadow {
   box-shadow:
     inset 0 1px 2px rgba(0, 0, 0, 0.1),
@@ -240,7 +235,6 @@
     inset 0 2px 6px rgba(255, 255, 255, 0.04);
 }
 
-/* Blog font size controls */
 .prose {
   font-size: var(--blog-font-size);
 }
