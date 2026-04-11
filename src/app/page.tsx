@@ -13,36 +13,29 @@ import React from 'react';
 export default function page() {
   return (
     <Container className="min-h-screen py-13">
-      {/* Hero - No animation (already visible) */}
       <Hero />
 
-      {/* About + Education */}
       <AnimatedSection id="about">
         <About />
         <Education />
       </AnimatedSection>
 
-      {/* Experience */}
       <AnimatedSection id="experience">
         <Experience />
       </AnimatedSection>
 
-      {/* Technology */}
       <AnimatedSection id="tech">
         <Technology />
       </AnimatedSection>
 
-      {/* Projects */}
       <AnimatedSection id="projects">
         <Work />
       </AnimatedSection>
 
-      {/* Certifications */}
       <AnimatedSection id="certifications">
         <Certifications />
       </AnimatedSection>
 
-      {/* Contact */}
       <AnimatedSection id="contact">
         <CTA />
       </AnimatedSection>
