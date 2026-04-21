@@ -15,10 +15,12 @@ const cinzel = Cinzel({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://benedicto-geraldo-doa-dawa.com'),
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_URL || 'https://benedicto-geraldo-doa-dawa.vercel.app'
+  ),
 
   title: {
-    default: 'Benedicto Geraldo Doa Dawa - Web Developer & QA Enthusiast',
+    default: 'Benedicto Geraldo Doa Dawa - Web Developer',
     template: '%s | Benedicto Geraldo Doa Dawa',
   },
 
@@ -40,7 +42,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Benedicto Geraldo Doa Dawa Portfolio',
     description: 'Web Developer & QA Enthusiast',
-    url: 'https://benedicto-geraldo-doa-dawa.com',
+    url: process.env.NEXT_PUBLIC_URL || 'https://benedicto-geraldo-doa-dawa.vercel.app',
     siteName: 'Benedicto Geraldo Doa Dawa Portfolio',
     locale: 'id_ID',
     type: 'website',
