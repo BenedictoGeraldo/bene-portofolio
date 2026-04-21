@@ -22,7 +22,7 @@ export const experiences: Experience[] = [
       'Coordinated with IT Creative team members and other divisions to provide guidance and socialization to congregation',
     ],
     startDate: 'May 2025',
-    endDate: 'Present',
+    endDate: 'April 2026',
     isCurrent: false,
   },
   {
