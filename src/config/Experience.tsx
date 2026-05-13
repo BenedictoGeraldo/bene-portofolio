@@ -14,7 +14,7 @@ export interface Experience {
 export const experiences: Experience[] = [
   {
     company: 'Gereja Kalvari Lubang Buaya',
-    position: 'IT Creative Team Member (Volunteer)',
+    position: 'Web Developer (Volunteer)',
     location: 'Remote',
     image: '/company/komsos-kalvari.png',
     description: [
