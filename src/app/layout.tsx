@@ -1,4 +1,4 @@
-import EntranceAnimation from '@/components/common/EntranceAnimation';
+// import EntranceAnimation from '@/components/common/EntranceAnimation';
 import Footer from '@/components/common/Footer';
 import Navbar from '@/components/common/Navbar';
 import ReactLenis from 'lenis/react';
@@ -16,7 +16,8 @@ const cinzel = Cinzel({
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_URL || 'https://benedicto-geraldo-doa-dawa.vercel.app'
+    process.env.NEXT_PUBLIC_URL ||
+      'https://benedicto-geraldo-doa-dawa.vercel.app',
   ),
 
   title: {
@@ -42,7 +43,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Benedicto Geraldo Doa Dawa Portfolio',
     description: 'Web Developer & QA Enthusiast',
-    url: process.env.NEXT_PUBLIC_URL || 'https://benedicto-geraldo-doa-dawa.vercel.app',
+    url:
+      process.env.NEXT_PUBLIC_URL ||
+      'https://benedicto-geraldo-doa-dawa.vercel.app',
     siteName: 'Benedicto Geraldo Doa Dawa Portfolio',
     locale: 'id_ID',
     type: 'website',
@@ -82,7 +85,7 @@ export default function RootLayout({
     <ViewTransitions>
       <html lang="id" className="dark" suppressHydrationWarning>
         <body className={`${cinzel.variable} font-hanken-grotesk antialiased`}>
-          <EntranceAnimation />
+          {/* <EntranceAnimation /> */}
 
           <ReactLenis root>
             <Navbar />
