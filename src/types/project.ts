@@ -8,6 +8,9 @@ export interface ScreenshotItem {
 
 export interface Project {
   title: string;
+  tagline?: string;
+  date?: string;
+  fullDescription?: string | React.ReactNode;
   description: string;
   image: string;
   link?: string | null;

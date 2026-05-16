@@ -16,7 +16,7 @@ import Github from '../svgs/Github';
 import Website from '../svgs/Website';
 import { Badge } from '../ui/badge';
 import { Tooltip, TooltipContent, TooltipTrigger } from '../ui/tooltip';
-import { ScreenshotGallery } from './ScreenshotGallery';
+import { ProjectDetailModal } from './ProjectDetailModal';
 
 interface ProjectCardProps {
   project: Project;
@@ -145,12 +145,8 @@ export function ProjectCard({ project }: ProjectCardProps) {
       {/* Footer - Screenshots or Detail Link */}
       <CardFooter className="flex justify-between gap-2 p-6 pt-0">
         {/* Screenshot Gallery Button */}
-        {project.screenshots && project.screenshots.length > 0 && (
-          <ScreenshotGallery
-            screenshots={project.screenshots}
-            projectTitle={project.title}
-          />
-        )}
+        {/* Detail Modal Button */}
+        <ProjectDetailModal project={project} />
 
         {/* Detail Page Link for Featured Projects */}
         {isFeatured && project.details && project.projectDetailsPageSlug && (
