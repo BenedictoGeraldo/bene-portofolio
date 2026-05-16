@@ -32,6 +32,9 @@ import { Project } from '@/types/project';
 export const projects: Project[] = [
   {
     title: 'Sinemaku',
+    tagline: 'Your Personal Movie Discovery Platform',
+    date: 'February 15, 2024',
+    fullDescription: 'Sinemaku is a comprehensive movie discovery platform that enables users to explore films, view detailed information, and manage personal watchlists. Built with Next.js and Tailwind CSS for a highly responsive frontend, it leverages NestJS and PostgreSQL to provide robust backend services and smooth user experiences.',
     description:
       'Sinemaku is a movie discovery platform that lets users explore films, search for titles, and manage a personal watchlist.',
     image: '/project/sinemaku/sinemaku-thumbnail.png',
@@ -75,6 +78,9 @@ export const projects: Project[] = [
 
   {
     title: 'STARK',
+    tagline: 'Better Teams Start With STARK',
+    date: 'January 06, 2025',
+    fullDescription: 'STARK is a comprehensive fullstack project management platform designed to streamline task tracking, manage strict deadlines, and facilitate seamless team collaboration. With dedicated dashboards for users and admins, STARK transforms chaotic workflows into organized success.',
     description:
       'A fullstack project management platform for tracking tasks, deadlines, and team collaboration',
     image: '/project/stark-thumbnail.png',

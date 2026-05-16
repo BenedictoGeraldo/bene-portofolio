@@ -11,7 +11,6 @@ export const navbarConfig = {
     height: 100,
   },
   navItems: [
-    ,
     {
       label: 'About',
       href: '#about',
