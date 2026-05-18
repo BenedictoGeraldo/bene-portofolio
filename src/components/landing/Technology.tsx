@@ -20,25 +20,40 @@ export default function Technology() {
             <div className="grid grid-cols-3 gap-6 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8">
               {category.technologies.map((tech) => {
                 const IconComponent = tech.component;
+                const hasHref = 'href' in tech && typeof tech.href === 'string';
+
+                const className =
+                  'group border-border bg-card hover:border-primary flex flex-col items-center gap-3 rounded-lg border p-4 transition-all duration-300 hover:scale-110 hover:shadow-lg cursor-default';
+
+                const inner = (
+                  <>
+                    <div className="flex size-12 items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                      <IconComponent />
+                    </div>
+                    <span className="text-muted-foreground group-hover:text-primary text-center text-xs font-medium">
+                      {tech.name}
+                    </span>
+                  </>
+                );
+
                 return (
                   <Tooltip key={tech.name}>
                     <TooltipTrigger asChild>
-                      <a
-                        href={tech.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="group border-border bg-card hover:border-primary flex flex-col items-center gap-3 rounded-lg border p-4 transition-all duration-300 hover:scale-110 hover:shadow-lg"
-                      >
-                        <div className="flex size-12 items-center justify-center transition-transform duration-300 group-hover:scale-110">
-                          <IconComponent />
-                        </div>
-                        <span className="text-muted-foreground group-hover:text-primary text-center text-xs font-medium">
-                          {tech.name}
-                        </span>
-                      </a>
+                      {hasHref ? (
+                        <a
+                          href={(tech as { href: string }).href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={className}
+                        >
+                          {inner}
+                        </a>
+                      ) : (
+                        <div className={className}>{inner}</div>
+                      )}
                     </TooltipTrigger>
                     <TooltipContent>
-                      <p>Visit {tech.name} documentation</p>
+                      <p>{tech.name}</p>
                     </TooltipContent>
                   </Tooltip>
                 );
