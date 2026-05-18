@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    'Portfolio Benedicto Geraldo Doa Dawa, Web Developer dan QA Enthusiast yang berfokus pada Next.js, React, dan Laravel.',
+    'Web Developer yang berfokus pada pengembangan website modern, scalable, dan responsif untuk membantu menyelesaikan kebutuhan dan permasalahan pengguna secara efektif.',
 
   keywords: [
     'benedicto geraldo doa dawa',
@@ -42,7 +42,8 @@ export const metadata: Metadata = {
 
   openGraph: {
     title: 'Benedicto Geraldo Doa Dawa Portfolio',
-    description: 'Web Developer & QA Enthusiast',
+    description:
+      'Web Developer yang berfokus pada pengembangan website modern, scalable, dan responsif',
     url:
       process.env.NEXT_PUBLIC_URL ||
       'https://benedicto-geraldo-doa-dawa.vercel.app',
@@ -62,7 +63,8 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Benedicto Geraldo Doa Dawa Portfolio',
-    description: 'Web Developer & QA Enthusiast',
+    description:
+      'Web Developer yang berfokus pada pengembangan website modern, scalable, dan responsif',
     images: ['/logo.png'],
   },
 
