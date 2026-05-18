@@ -1,27 +1,26 @@
 import CSS from '@/components/technologies/CSS';
-import Cypress from '@/components/technologies/Cypress';
 import Docker from '@/components/technologies/Docker';
 import Express from '@/components/technologies/Express';
-import GithubAction from '@/components/technologies/GithubAction';
 import Html from '@/components/technologies/Html';
-import InfinityFree from '@/components/technologies/InfinityFree';
 import JavaScript from '@/components/technologies/JavaScript';
 import Jest from '@/components/technologies/Jest';
 import Laravel from '@/components/technologies/Laravel';
 import MongoDB from '@/components/technologies/MongoDB';
 import MySQL from '@/components/technologies/MySQL';
-// import NestJs from '@/components/technologies/NestJs';
+import NestJs from '@/components/technologies/NestJs';
 import NextJs from '@/components/technologies/NextJs';
 import Php from '@/components/technologies/Php';
 import PostgreSQL from '@/components/technologies/PostgreSQL';
 import Postman from '@/components/technologies/Postman';
 import ReactIcon from '@/components/technologies/ReactIcon';
-import SonarQube from '@/components/technologies/SonarQube';
+import SpringBoot from '@/components/technologies/SpringBoot';
 import TailwindCss from '@/components/technologies/TailwindCss';
+import TanStack from '@/components/technologies/TanStack';
 import TypeScript from '@/components/technologies/TypeScript';
-import Vercel from '@/components/technologies/Vercel';
-import WordPress from '@/components/technologies/WordPress';
-import Zap from '@/components/technologies/Zap';
+
+import Java from '../components/technologies/Java';
+import Shadcn from '../components/technologies/Shadcn';
+import Vue from '../components/technologies/vue';
 
 export const technologyConfig = {
   categories: [
@@ -31,17 +30,22 @@ export const technologyConfig = {
         {
           name: 'HTML',
           component: Html,
-          href: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
         },
         {
           name: 'CSS',
           component: CSS,
-          href: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
         },
         {
           name: 'Tailwind CSS',
           component: TailwindCss,
-          href: 'https://tailwindcss.com/',
+        },
+        {
+          name: 'Shadcn UI',
+          component: Shadcn,
+        },
+        {
+          name: 'TanStack',
+          component: TanStack,
         },
       ],
     },
@@ -51,17 +55,18 @@ export const technologyConfig = {
         {
           name: 'JavaScript',
           component: JavaScript,
-          href: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
         },
         {
           name: 'TypeScript',
           component: TypeScript,
-          href: 'https://www.typescriptlang.org/',
+        },
+        {
+          name: 'Java',
+          component: Java,
         },
         {
           name: 'PHP',
           component: Php,
-          href: 'https://www.php.net/',
         },
       ],
     },
@@ -71,37 +76,35 @@ export const technologyConfig = {
         {
           name: 'React',
           component: ReactIcon,
-          href: 'https://react.dev/',
         },
         {
           name: 'Next.js',
           component: NextJs,
-          href: 'https://nextjs.org/',
+        },
+        {
+          name: 'Vue.js',
+          component: Vue,
         },
       ],
     },
     {
-      title: 'Backend & CMS',
+      title: 'Backend Frameworks',
       technologies: [
         {
           name: 'Express.Js',
           component: Express,
-          href: 'https://expressjs.com/',
         },
-        // {
-        //   name: 'NestJs',
-        //   component: NestJs,
-        //   href: 'https://nestjs.com/',
-        // },
+        {
+          name: 'NestJs',
+          component: NestJs,
+        },
+        {
+          name: 'Spring Boot',
+          component: SpringBoot,
+        },
         {
           name: 'Laravel',
           component: Laravel,
-          href: 'https://laravel.com/',
-        },
-        {
-          name: 'WordPress',
-          component: WordPress,
-          href: 'https://wordpress.org/',
         },
       ],
     },
@@ -111,72 +114,31 @@ export const technologyConfig = {
         {
           name: 'MySQL',
           component: MySQL,
-          href: 'https://www.mysql.com/',
         },
         {
           name: 'PostgreSQL',
           component: PostgreSQL,
-          href: 'https://www.postgresql.org/',
         },
         {
           name: 'MongoDB',
           component: MongoDB,
-          href: 'https://www.mongodb.com/',
         },
       ],
     },
     {
-      title: 'Quality Assurance & CI/CD',
+      title: 'Others',
       technologies: [
-        {
-          name: 'Cypress',
-          component: Cypress,
-          href: 'https://cypress.io/',
-        },
-        {
-          name: 'SonarQube',
-          component: SonarQube,
-          href: 'https://www.sonarqube.org/',
-        },
-        {
-          name: 'Jest',
-          component: Jest,
-          href: 'https://jestjs.io/',
-        },
-        {
-          name: 'OWASP ZAP',
-          component: Zap,
-          href: 'https://www.zaproxy.org/',
-        },
         {
           name: 'Postman',
           component: Postman,
-          href: 'https://www.postman.com/',
         },
         {
           name: 'Docker',
           component: Docker,
-          href: 'https://www.docker.com/',
         },
         {
-          name: 'Github Actions',
-          component: GithubAction,
-          href: 'https://github.com/features/actions',
-        },
-      ],
-    },
-    {
-      title: 'Deployment & Hosting',
-      technologies: [
-        {
-          name: 'Vercel',
-          component: Vercel,
-          href: 'https://vercel.com/',
-        },
-        {
-          name: 'InfinityFree',
-          component: InfinityFree,
-          href: 'https://www.infinityfree.com/',
+          name: 'Jest',
+          component: Jest,
         },
       ],
     },

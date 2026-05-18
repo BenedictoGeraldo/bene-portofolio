@@ -18,10 +18,10 @@ const buttonIcons = {
 };
 
 export default function Hero() {
-  const { name, title, avatar, skills, description, buttons } = heroConfig;
+  const { name, title, avatar, description, buttons } = heroConfig;
 
   const renderDescription = () => {
-    const parts = parseTemplate(description.template, skills);
+    const parts = parseTemplate(description.template, []);
 
     return parts.map((part) => {
       if (part.type === 'skill' && 'skill' in part && part.skill) {

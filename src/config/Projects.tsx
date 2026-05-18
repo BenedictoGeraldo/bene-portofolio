@@ -1,14 +1,11 @@
 import Axios from '@/components/technologies/Axios';
 import BootStrap from '@/components/technologies/BootStrap';
 import CSS from '@/components/technologies/CSS';
-import Cypress from '@/components/technologies/Cypress';
 import Docker from '@/components/technologies/Docker';
 import Express from '@/components/technologies/Express';
-import Filament from '@/components/technologies/Filament';
 import FramerMotion from '@/components/technologies/FramerMotion';
 import Html from '@/components/technologies/Html';
 import InfinityFree from '@/components/technologies/InfinityFree';
-import JMeter from '@/components/technologies/JMeter';
 import JQuery from '@/components/technologies/JQuery';
 import JavaScript from '@/components/technologies/JavaScript';
 import Laravel from '@/components/technologies/Laravel';
@@ -16,25 +13,147 @@ import MySQL from '@/components/technologies/MySQL';
 import NestJs from '@/components/technologies/NestJs';
 import Netlify from '@/components/technologies/Netlify';
 import NextJs from '@/components/technologies/NextJs';
+import Oracle from '@/components/technologies/Oracle';
 import PostgreSQL from '@/components/technologies/PostgreSQL';
 import Postman from '@/components/technologies/Postman';
 import Prisma from '@/components/technologies/Prisma';
 import Replit from '@/components/technologies/Replit';
-import SonarQube from '@/components/technologies/SonarQube';
+import Shadcn from '@/components/technologies/Shadcn';
+import Supabase from '@/components/technologies/Supabase';
 import TailwindCss from '@/components/technologies/TailwindCss';
-import Twilio from '@/components/technologies/Twilio';
 import TypeScript from '@/components/technologies/TypeScript';
 import Vercel from '@/components/technologies/Vercel';
 import WordPress from '@/components/technologies/WordPress';
-import Zap from '@/components/technologies/Zap';
 import { Project } from '@/types/project';
 
+import Java from '../components/technologies/Java';
+import SpringBoot from '../components/technologies/SpringBoot';
+import Vue from '../components/technologies/vue';
+
 export const projects: Project[] = [
+  {
+    title: 'Pelayanan Kode NCAGE (Remake)',
+    description:
+      'Official digital platform for NCAGE code registration, verification, and status tracking in Indonesia managed by the Codification Center (Puskod) of the Indonesian Ministry of Defense. The system provides a company portal for NCAGE submission and tracking, as well as an admin portal for verification, approval, revision, and NCAGE certificate management.',
+    image: '/project/ncage/beranda-company.png',
+    link: 'https://ncage-next.vercel.app/',
+    screenshots: [
+      {
+        src: '/project/ncage/login-company.png',
+        caption: 'Login Page Company Side',
+      },
+      {
+        src: '/project/ncage/dashboard-admin.png',
+        caption: 'Dashboard Admin',
+      },
+      {
+        src: '/project/ncage/pantau-status-company.png',
+        caption: 'Registration NCAGE Status Monitoring',
+      },
+      {
+        src: '/project/ncage/data-ncage-records-admin(dummy).png',
+        caption: 'NCAGE Records Data Management Admin (dummy data)',
+      },
+    ],
+    technologies: [
+      { name: 'NextJs', icon: <NextJs key="nextjs" /> },
+      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
+      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwind" /> },
+      { name: 'Supabase', icon: <Supabase key="supabase" /> },
+      { name: 'PostgreSQL', icon: <PostgreSQL key="postgresql" /> },
+      { name: 'ShadcnUI', icon: <Shadcn key="shadcn" /> },
+    ],
+    github: 'https://github.com/BenedictoGeraldo/ncage-next.git',
+    status: 'completed',
+    type: 'featured',
+    details: false,
+    projectDetailsPageSlug: '/projects/ncage',
+  },
+
+  {
+    title: 'QuickO',
+    description:
+      'QuickO is a web-based student data management system built with Vue 3 and TypeScript. The application integrates with a Spring Boot backend through REST APIs to handle authentication and CRUD operations within a responsive and modern user interface.',
+    image: '/project/quicko/login-page.png',
+    link: 'https://quicko-vue.netlify.app/',
+    screenshots: [
+      {
+        src: '/project/quicko/login-page.png',
+        caption: 'Login Page',
+      },
+      {
+        src: '/project/quicko/register-page.png',
+        caption: 'Register Page',
+      },
+      {
+        src: '/project/quicko/view-mahasiswa.png',
+        caption: 'List Mahasiswa',
+      },
+      {
+        src: '/project/quicko/tambah-mahasiswa.png',
+        caption: 'Add New Mahasiswa',
+      },
+    ],
+    technologies: [
+      { name: 'VueJs', icon: <Vue key="vue" /> },
+      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
+      { name: 'Java', icon: <Java key="java" /> },
+      { name: 'Oracle', icon: <Oracle key="oracle" /> },
+      { name: 'Spring Boot', icon: <SpringBoot key="spring-boot" /> },
+      { name: 'Postman', icon: <Postman key="postman" /> },
+    ],
+    github: 'https://github.com/BenedictoGeraldo/mahasiswa-crud-vue',
+    status: 'completed',
+    type: 'featured',
+    details: false,
+    projectDetailsPageSlug: '/projects/stqa-evershop',
+  },
+
+  {
+    title: 'STARK',
+    tagline: 'Better Teams Start With STARK',
+    date: 'January 06, 2025',
+    fullDescription:
+      'STARK is a comprehensive fullstack project management platform designed to streamline task tracking, manage strict deadlines, and facilitate seamless team collaboration. With dedicated dashboards for users and admins, STARK transforms chaotic workflows into organized success.',
+    description:
+      'A fullstack project management platform for tracking tasks, deadlines, and team collaboration',
+    image: '/project/stark-thumbnail.png',
+    link: null,
+    screenshots: [
+      { src: '/project/stark/registration.png', caption: 'Registration Page' },
+      {
+        src: '/project/stark/dashboard-user.png',
+        caption: 'User Dashboard',
+      },
+      { src: '/project/stark/dashboard-admin.png', caption: 'Admin Dashboard' },
+      {
+        src: '/project/stark/add-project.png',
+        caption: 'Add New Project Form',
+      },
+    ],
+    technologies: [
+      { name: 'JavaScript', icon: <JavaScript key="javascript" /> },
+      { name: 'NextJs', icon: <NextJs key="nextjs" /> },
+      { name: 'TailwindCss', icon: <TailwindCss key="tailwind" /> },
+      { name: 'Axios', icon: <Axios key="axios" /> },
+      { name: 'Express', icon: <Express key="express" /> },
+      { name: 'MySQL', icon: <MySQL key="mysql" /> },
+      { name: 'Postman', icon: <Postman key="postman" /> },
+      { name: 'Docker', icon: <Docker key="docker" /> },
+    ],
+    github: 'https://github.com/BenedictoGeraldo/Freelance-Management.git',
+    status: 'completed',
+    type: 'featured',
+    details: false,
+    projectDetailsPageSlug: '/projects/stark',
+  },
+
   {
     title: 'Sinemaku',
     tagline: 'Your Personal Movie Discovery Platform',
     date: 'February 15, 2024',
-    fullDescription: 'Sinemaku is a comprehensive movie discovery platform that enables users to explore films, view detailed information, and manage personal watchlists. Built with Next.js and Tailwind CSS for a highly responsive frontend, it leverages NestJS and PostgreSQL to provide robust backend services and smooth user experiences.',
+    fullDescription:
+      'Sinemaku is a comprehensive movie discovery platform that enables users to explore films, view detailed information, and manage personal watchlists. Built with Next.js and Tailwind CSS for a highly responsive frontend, it leverages NestJS and PostgreSQL to provide robust backend services and smooth user experiences.',
     description:
       'Sinemaku is a movie discovery platform that lets users explore films, search for titles, and manage a personal watchlist.',
     image: '/project/sinemaku/sinemaku-thumbnail.png',
@@ -77,43 +196,6 @@ export const projects: Project[] = [
   },
 
   {
-    title: 'STARK',
-    tagline: 'Better Teams Start With STARK',
-    date: 'January 06, 2025',
-    fullDescription: 'STARK is a comprehensive fullstack project management platform designed to streamline task tracking, manage strict deadlines, and facilitate seamless team collaboration. With dedicated dashboards for users and admins, STARK transforms chaotic workflows into organized success.',
-    description:
-      'A fullstack project management platform for tracking tasks, deadlines, and team collaboration',
-    image: '/project/stark-thumbnail.png',
-    link: null,
-    screenshots: [
-      { src: '/project/stark/registration.png', caption: 'Registration Page' },
-      {
-        src: '/project/stark/dashboard-user.png',
-        caption: 'User Dashboard',
-      },
-      { src: '/project/stark/dashboard-admin.png', caption: 'Admin Dashboard' },
-      {
-        src: '/project/stark/add-project.png',
-        caption: 'Add New Project Form',
-      },
-    ],
-    technologies: [
-      { name: 'JavaScript', icon: <JavaScript key="javascript" /> },
-      { name: 'NextJs', icon: <NextJs key="nextjs" /> },
-      { name: 'TailwindCss', icon: <TailwindCss key="tailwind" /> },
-      { name: 'Axios', icon: <Axios key="axios" /> },
-      { name: 'Express', icon: <Express key="express" /> },
-      { name: 'MySQL', icon: <MySQL key="mysql" /> },
-      { name: 'Postman', icon: <Postman key="postman" /> },
-      { name: 'Docker', icon: <Docker key="docker" /> },
-    ],
-    github: 'https://github.com/BenedictoGeraldo/Freelance-Management.git',
-    status: 'completed',
-    type: 'featured',
-    details: false,
-    projectDetailsPageSlug: '/projects/stark',
-  },
-  {
     title: 'Can Do',
     description:
       'A clean and minimal to-do list app enhanced with AI assistance to keep you focused and productive',
@@ -142,47 +224,7 @@ export const projects: Project[] = [
     details: false,
     projectDetailsPageSlug: '/projects/can-do',
   },
-  {
-    title: 'Evershop Quality Assurance Project',
-    description:
-      'STQA project for Evershop E-commerce, covering end-to-end, performance, security, and code quality testing',
-    image: '/project/stqa-evershop/evershop-thumbnail.png',
-    link: null,
-    screenshots: [
-      {
-        src: '/project/stqa-evershop/cypress-1.jpg',
-        caption: 'End to End Testing with Cypress',
-      },
-      {
-        src: '/project/stqa-evershop/cypress-wcag.jpg',
-        caption: 'WCAG Testing with Cypress-axe',
-      },
-      {
-        src: '/project/stqa-evershop/jmeter-1.jpg',
-        caption: 'Performance Testing with Apache JMeter',
-      },
-      {
-        src: '/project/stqa-evershop/postman-1.jpg',
-        caption: 'API Testing with Postman',
-      },
-      {
-        src: '/project/stqa-evershop/sonarqube-1.jpg',
-        caption: 'Code Quality Analysis with SonarQube',
-      },
-    ],
-    technologies: [
-      { name: 'Cypress', icon: <Cypress key="cypress" /> },
-      { name: 'SonarQube', icon: <SonarQube key="sonarqube" /> },
-      { name: 'OWASP ZAP', icon: <Zap key="zap" /> },
-      { name: 'Apache JMeter', icon: <JMeter key="jmeter" /> },
-      { name: 'Postman', icon: <Postman key="postman" /> },
-    ],
-    github: 'https://github.com/BenedictoGeraldo/STQA-for-evershop.git',
-    status: 'completed',
-    type: 'featured',
-    details: false,
-    projectDetailsPageSlug: '/projects/stqa-evershop',
-  },
+
   {
     title: 'Mari Futsal',
     description:
@@ -201,41 +243,6 @@ export const projects: Project[] = [
     type: 'featured',
     details: false,
     projectDetailsPageSlug: '/projects/mari-futsal',
-  },
-
-  {
-    title: 'Pelayanan Kode NCAGE',
-    description:
-      'Government-grade system to manage registration and updating of NCAGE codes with secure workflows',
-    image: '/project/thumbnail-ncage.png',
-    link: null,
-    screenshots: [
-      { src: '/project/ncage/login.png', caption: 'Login Page' },
-      {
-        src: '/project/ncage/ncage-registration-form.png',
-        caption: 'NCAGE Registration Form',
-      },
-      {
-        src: '/project/ncage/monitoring-status.png',
-        caption: 'Registration NCAGE Status Monitoring',
-      },
-      {
-        src: '/project/ncage/admin-dashboard.png',
-        caption: 'Admin Dashboard',
-      },
-    ],
-    technologies: [
-      { name: 'Laravel', icon: <Laravel key="laravel" /> },
-      { name: 'MySQL', icon: <MySQL key="mysql" /> },
-      { name: 'Bootstrap', icon: <BootStrap key="bootstrap" /> },
-      { name: 'Filament', icon: <Filament key="filament" /> },
-      { name: 'Twilio', icon: <Twilio key="twilio" /> },
-    ],
-    github: 'https://github.com/BenedictoGeraldo/Project_NCAGE.git',
-    status: 'completed',
-    type: 'featured',
-    details: false,
-    projectDetailsPageSlug: '/projects/ncage',
   },
 
   // {
