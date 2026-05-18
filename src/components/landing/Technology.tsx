@@ -14,7 +14,7 @@ export default function Technology() {
       <div className="mt-12 space-y-12">
         {technologyConfig.categories.map((category) => (
           <div key={category.title} className="space-y-6">
-            <h3 className="text-xl font-semibold text-primary">
+            <h3 className="text-primary text-xl font-semibold">
               {category.title}
             </h3>
             <div className="grid grid-cols-3 gap-6 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8">
@@ -27,12 +27,12 @@ export default function Technology() {
                         href={tech.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="group flex flex-col items-center gap-3 rounded-lg border border-border bg-card p-4 transition-all duration-300 hover:scale-110 hover:border-primary hover:shadow-lg"
+                        className="group border-border bg-card hover:border-primary flex flex-col items-center gap-3 rounded-lg border p-4 transition-all duration-300 hover:scale-110 hover:shadow-lg"
                       >
-                        <div className="size-12 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                        <div className="flex size-12 items-center justify-center transition-transform duration-300 group-hover:scale-110">
                           <IconComponent />
                         </div>
-                        <span className="text-xs font-medium text-center text-muted-foreground group-hover:text-primary">
+                        <span className="text-muted-foreground group-hover:text-primary text-center text-xs font-medium">
                           {tech.name}
                         </span>
                       </a>

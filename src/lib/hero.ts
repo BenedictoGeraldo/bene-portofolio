@@ -1,8 +1,12 @@
-import { heroConfig } from '@/config/Hero';
+interface SkillItem {
+  name: string;
+  href: string;
+  component: string;
+}
 
 export const parseTemplate = (
   template: string,
-  skills: typeof heroConfig.skills,
+  skills: SkillItem[],
 ) => {
   const parts = template.split(/(\{skills:\d+\})/);
 

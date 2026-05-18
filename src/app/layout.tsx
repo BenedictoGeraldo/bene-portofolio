@@ -26,8 +26,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    'Web Developer yang berfokus pada pengembangan website modern, scalable, dan responsif untuk membantu menyelesaikan kebutuhan dan permasalahan pengguna secara efektif.',
-
+    'Web Developer focused on developing modern, scalable, and responsive websites to help solve user needs and problems effectively.',
   keywords: [
     'benedicto geraldo doa dawa',
     'web developer indonesia',
@@ -43,7 +42,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Benedicto Geraldo Doa Dawa Portfolio',
     description:
-      'Web Developer yang berfokus pada pengembangan website modern, scalable, dan responsif',
+      'Web Developer focused on developing modern, scalable, and responsive websites',
     url:
       process.env.NEXT_PUBLIC_URL ||
       'https://benedicto-geraldo-doa-dawa.vercel.app',
@@ -64,7 +63,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Benedicto Geraldo Doa Dawa Portfolio',
     description:
-      'Web Developer yang berfokus pada pengembangan website modern, scalable, dan responsif',
+      'Web Developer focused on developing modern, scalable, and responsive websites',
     images: ['/logo.png'],
   },
 
