@@ -88,7 +88,7 @@ export const technologyConfig = {
       ],
     },
     {
-      title: 'Backend & CMS',
+      title: 'Backend Frameworks',
       technologies: [
         {
           name: 'Express.Js',
@@ -99,7 +99,7 @@ export const technologyConfig = {
           component: NestJs,
         },
         {
-          name: 'Spring Booot',
+          name: 'Spring Boot',
           component: SpringBoot,
         },
         {
