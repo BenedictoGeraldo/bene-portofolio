@@ -13,6 +13,16 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
+    company: 'Adira Finance',
+    position: 'Developer - IT Development Intern',
+    location: 'Jakarta',
+    image: '/company/logo-adira.png',
+    description: ['-'],
+    startDate: 'June 2026',
+    endDate: 'December 2026',
+    isCurrent: true,
+  },
+  {
     company: 'Gereja Kalvari Lubang Buaya',
     position: 'Web Developer (Volunteer)',
     location: 'Remote',
