@@ -43,7 +43,7 @@ export const heroConfig = {
   // Description Configuration
   description: {
     template:
-      'Junior software engineer who is focused on developing modern, scalable, and maintainable applications with strong attention to system architecture, performance, and user experience. Experienced in developing web-based systems from planning and implementation to deployment to help solve user problems effectively.',
+      'Web Developer focused on developing modern, scalable, and maintainable applications with strong attention to system architecture, performance, and user experience. Experienced in developing web-based systems from planning and implementation to deployment to help solve user problems effectively.',
   },
 
   // Buttons Configuration
