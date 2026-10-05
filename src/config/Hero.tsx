@@ -37,7 +37,7 @@ export const skillComponents = {
 export const heroConfig = {
   // Personal Information
   name: 'Benedicto Geraldo Doa Dawa',
-  title: 'Junior Web developer.',
+  title: 'Junior Software Engineer',
   avatar: '/assets/logo.jpg',
 
   // Description Configuration
