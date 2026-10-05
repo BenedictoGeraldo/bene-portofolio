@@ -31,5 +31,5 @@ export const mySkills = [
 
 export const about = {
   name: 'Benedicto Geraldo Doa Dawa',
-  description: `I'm a final-year Information Systems student who loves learning through building real-world projects. I enjoy experimenting, refining details, and transforming ideas into meaningful, interactive experiences. I believe growth comes from staying curious, consistent, and open to feedback and collaboration while continuously improving both technical and problem-solving skills.`,
+  description: `I'm a fresh graduate Information Systems student who loves learning through building real-world projects. I enjoy experimenting, refining details, and transforming ideas into meaningful, interactive experiences. I believe growth comes from staying curious, consistent, and open to feedback and collaboration while continuously improving both technical and problem-solving skills.`,
 };
