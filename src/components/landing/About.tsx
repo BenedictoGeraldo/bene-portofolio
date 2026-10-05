@@ -12,11 +12,11 @@ export default function About() {
       {/* About me */}
       <div className="mt-8 flex flex-col gap-4 md:flex-row">
         <Image
-          src="/assets/me.jpg"
+          src="/assets/me-formal.png"
           alt="About"
           width={500}
           height={500}
-          className="h-60 w-48 rounded-md border-2 border-secondary bg-blue-300 object-cover dark:bg-yellow-300"
+          className="border-secondary h-60 w-48 rounded-md border-2 bg-blue-300 object-cover dark:bg-yellow-300"
         />
         <div className="mt-4">
           <h3 className="text-2xl font-bold">{about.name}</h3>
