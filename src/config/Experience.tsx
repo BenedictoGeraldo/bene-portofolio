@@ -16,7 +16,7 @@ export const experiences: Experience[] = [
     company: 'Adira Finance',
     position: 'Developer - IT Finance Developer',
     location: 'Jakarta',
-    image: '/company/logo-adira.png',
+    image: '/company/logo-adira.jpg',
     description: [
       'Spearheaded the redevelopment and seamless data migration of a core finance application, ensuring high data integrity through rigorous reconciliation between legacy and modern systems',
       'Engineered robust backend services using Spring Boot, successfully migrating complex accounts receivable business logic from database Stored Procedures to the application layer, which boosted overall application performance by 30%',
