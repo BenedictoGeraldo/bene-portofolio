@@ -30,7 +30,7 @@ export const experiences: Experience[] = [
   {
     company: 'Gereja Kalvari Lubang Buaya',
     position: 'Web Developer (Volunteer)',
-    location: 'Remote',
+    location: 'Jakarta',
     image: '/company/komsos-kalvari.png',
     description: [
       'Developed a full-stack website using Laravel framework named "Pelita" for church asset management',
@@ -43,7 +43,7 @@ export const experiences: Experience[] = [
   {
     company: 'Ministry of Defense - Codification Center',
     position: 'Web Developer Intern',
-    location: 'Jakarta, Indonesia',
+    location: 'Jakarta',
     image: '/company/kemhan.png',
     description: [
       'Developed a full-stack website using Laravel framework to facilitate companies in obtaining NCAGE (NATO Commercial and Government Entity) code',
@@ -56,7 +56,7 @@ export const experiences: Experience[] = [
   {
     company: 'KSM Multimedia UPNVJ',
     position: 'Web Development Member',
-    location: 'Jakarta, Indonesia',
+    location: 'Jakarta',
     image: '/company/ksm-multimedia.png',
     description: [
       'Built a full-stack "Freelance Project Management System" using Next.js for Front-End and Express.js for Back-End',

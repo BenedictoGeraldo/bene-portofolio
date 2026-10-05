@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   ),
 
   title: {
-    default: 'Benedicto Geraldo Doa Dawa - Web Developer',
+    default: 'Benedicto Geraldo Doa Dawa - Junior Software Engineer',
     template: '%s | Benedicto Geraldo Doa Dawa',
   },
 
