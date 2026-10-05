@@ -15,8 +15,9 @@ function ScrollArea({
 
   React.useEffect(() => {
     type WindowWithLenis = Window & { lenis?: Lenis };
-    if (typeof window !== 'undefined' && (window as WindowWithLenis).lenis) {
-      setLenisInstance((window as WindowWithLenis).lenis!);
+    const win = window as unknown as WindowWithLenis;
+    if (typeof window !== 'undefined' && win.lenis) {
+      setLenisInstance(win.lenis);
     }
   }, []);
 
