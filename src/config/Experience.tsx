@@ -14,12 +14,17 @@ export interface Experience {
 export const experiences: Experience[] = [
   {
     company: 'Adira Finance',
-    position: 'Developer - IT Development Intern',
+    position: 'Developer - IT Finance Developer',
     location: 'Jakarta',
     image: '/company/logo-adira.png',
-    description: ['-'],
+    description: [
+      'Spearheaded the redevelopment and seamless data migration of a core finance application, ensuring high data integrity through rigorous reconciliation between legacy and modern systems',
+      'Engineered robust backend services using Spring Boot, successfully migrating complex accounts receivable business logic from database Stored Procedures to the application layer, which boosted overall application performance by 30%',
+      'Designed and deployed automated SSIS data pipelines to extract, transform, and load (ETL) customer data into the telecaller system, significantly streamlining the debt collection workflow',
+      'Optimized database operations by tuning SQL Stored Procedures and validating customer transaction statuses to ensure strict alignment with user and business requirements',
+    ],
     startDate: 'June 2026',
-    endDate: 'December 2026',
+    endDate: 'October 2026',
     isCurrent: true,
   },
   {
